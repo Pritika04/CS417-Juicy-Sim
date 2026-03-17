@@ -51,6 +51,7 @@ struct WordWrapStateU5BU5D_t473D59C9DBCC949CE72EF1EB471CBA152A6CEAC9;
 struct SectionU5BU5D_t9D3017555FFF42E71BE91904A2486EAF429F24C4;
 struct TextProcessingElementU5BU5D_tC3E97D1672C8DB6E1F91DB2C0987D0ED9A2E7113;
 struct AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074;
+struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 struct Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098;
 struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
 struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26;
@@ -69,6 +70,7 @@ struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
 struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4;
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
 struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
 struct ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1;
 struct Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB;
 struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
@@ -95,25 +97,27 @@ struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852B
 struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C;
-struct U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36;
+struct U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 struct Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401;
 struct MissingCharacterEventCallback_t955241181324E0FEF9A9BDBA400E8780F8979DE6;
 
 IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____59469F7B5C3DDC90DE916194382E7F2D1CA7F4563AB6E0D6DD1CBCF935A8372F_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____BD2BDF84DEC502A1B3A5D2C40CF4849E846300E0F73DC56DB49342D158C3C91F_FieldInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral1A8EBD7CFFFF17E51D7F8D4E305EC07518F642FF;
 IL2CPP_EXTERN_C String_t* _stringLiteral6C251B43F3FC68CB2E4D7D256095FFA230BC30F8;
 IL2CPP_EXTERN_C String_t* _stringLiteral82A9E982D64825AB1AFA9B9F05B6F95568FB02F1;
 IL2CPP_EXTERN_C String_t* _stringLiteralD8044A8CED8EF0DC352208EE2EA220CC6211FF5C;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CGrowEaseU3Ed__30_System_Collections_IEnumerator_Reset_m8DD4308D2F5D38AD30BCD38BC636309798A9AB7E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CGrowEaseU3Ed__36_System_Collections_IEnumerator_Reset_m6235DE3E22FBF6AB1C7CD50B51CE03156C9D7DB4_RuntimeMethod_var;
 struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
 
@@ -705,7 +709,7 @@ struct VerticalAlignmentOptions_tCEF70AF60282B71AEEE14D51253CE6A61E72D855
 {
 	int32_t ___value__;
 };
-struct U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36  : public RuntimeObject
+struct U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -1077,9 +1081,15 @@ struct TMP_TextProcessingStack_1_t2DDA00FFC64AF6E3AFD475AB2086D16C34787E0F
 	int32_t ___m_RolloverSize;
 	int32_t ___m_Count;
 };
+struct AudioBehaviour_t2DC0BEF7B020C952F3D2DA5AAAC88501C7EEB941  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
 {
 	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
+};
+struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299  : public AudioBehaviour_t2DC0BEF7B020C952F3D2DA5AAAC88501C7EEB941
+{
 };
 struct FarmManager_tF10AFA078805BAAA799E002E329268C92B137686  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -1094,14 +1104,19 @@ struct FarmManager_tF10AFA078805BAAA799E002E329268C92B137686  : public MonoBehav
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___seedsUI;
 	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___seedParticles;
 	float ___seedTimer;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___buyPowerUpButton;
+	float ___powerUpCost;
+	float ___multiplier;
 	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___unlockSeedsButton;
 	float ___unlockCost;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___unlockSound;
 	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___buyGenButton;
 	float ___genCost;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___seedPacketPrefab;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___spawnPoint;
 	float ___spawnRadius;
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___genCountText;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___genUI;
 	int32_t ___totalGenerators;
 	bool ___unlockSeedsButtonShown;
 	bool ___generatorUnlocked;
@@ -1458,6 +1473,10 @@ struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector;
 };
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject;
+};
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
 {
 	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_DefaultUI;
@@ -1586,6 +1605,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Selectable_set_interactable_m8DD581C1AD9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* Selectable_get_image_m88664022F6BC90E7B8D4BFCBA7FE24B48E90C639 (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_gray_m6D01087E0F20F34718EBA5B213853B4BB49F1DEF (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494 (float ___0_minInclusive, float ___1_maxInclusive, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
@@ -1598,7 +1620,7 @@ inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FarmManager_GrowEase_mE3444CB19D2F181D581585456B40FEF7A9E324BC (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_target, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGrowEaseU3Ed__30__ctor_mB1A9A0F13504B3CB26E2F2B9ADBEA1B7598342ED (U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGrowEaseU3Ed__36__ctor_mA439D6D67FF8DE3E8B006E2B317CC9A382327D63 (U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
@@ -1622,121 +1644,166 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79615
+// Method Definition Index: 79618
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_Start_m03CAB4FECE5E9F506F29826BAC5229F1A82B90A7 (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:43>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:50>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___seedsUI;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:44>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:51>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_1 = __this->___unlockSeedsButton;
 		NullCheck(L_1);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_1, NULL);
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:45>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:52>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_3 = __this->___buyGenButton;
 		NullCheck(L_3);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
 		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:46>
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_5 = __this->___genCountText;
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:53>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___genUI;
 		NullCheck(L_5);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
-		L_6 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_5, NULL);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:54>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_6 = __this->___buyPowerUpButton;
 		NullCheck(L_6);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:47>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
+		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_6, NULL);
+		NullCheck(L_7);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:55>
 		return;
 	}
 }
-// Method Definition Index: 79616
+// Method Definition Index: 79619
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_CheckProgression_m12E088755B7358F06CD7CCF9F3512E09B9D137FF (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:51>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:59>
 		bool L_0 = __this->___unlockSeedsButtonShown;
 		if (L_0)
 		{
-			goto IL_002d;
+			goto IL_002e;
 		}
 	}
 	{
 		float L_1 = __this->___water;
-		if ((!(((float)L_1) >= ((float)(20.0f)))))
+		float L_2 = __this->___unlockCost;
+		if ((!(((float)L_1) >= ((float)L_2))))
 		{
-			goto IL_002d;
+			goto IL_002e;
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:53>
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_2 = __this->___unlockSeedsButton;
-		NullCheck(L_2);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
-		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_2, NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:61>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_3 = __this->___unlockSeedsButton;
 		NullCheck(L_3);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:54>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:62>
 		__this->___unlockSeedsButtonShown = (bool)1;
 	}
 
-IL_002d:
+IL_002e:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:57>
-		bool L_4 = __this->___generatorUnlocked;
-		if (L_4)
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:65>
+		bool L_5 = __this->___generatorUnlocked;
+		if (L_5)
 		{
-			goto IL_0074;
+			goto IL_0076;
 		}
 	}
 	{
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___seedsUI;
-		NullCheck(L_5);
-		bool L_6;
-		L_6 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_5, NULL);
-		if (!L_6)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___seedsUI;
+		NullCheck(L_6);
+		bool L_7;
+		L_7 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_6, NULL);
+		if (!L_7)
 		{
-			goto IL_0074;
+			goto IL_0076;
 		}
 	}
 	{
-		float L_7 = __this->___water;
-		if ((!(((float)L_7) >= ((float)(20.0f)))))
+		float L_8 = __this->___water;
+		float L_9 = __this->___unlockCost;
+		if ((!(((float)L_8) >= ((float)L_9))))
 		{
-			goto IL_0074;
+			goto IL_0076;
 		}
 	}
 	{
-		float L_8 = __this->___seeds;
-		if ((!(((float)L_8) >= ((float)(5.0f)))))
+		float L_10 = __this->___seeds;
+		if ((!(((float)L_10) >= ((float)(5.0f)))))
 		{
-			goto IL_0074;
+			goto IL_0076;
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:59>
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_9 = __this->___buyGenButton;
-		NullCheck(L_9);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10;
-		L_10 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_9, NULL);
-		NullCheck(L_10);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)1, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:60>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:67>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_11 = __this->___buyGenButton;
+		NullCheck(L_11);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12;
+		L_12 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_11, NULL);
+		NullCheck(L_12);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)1, NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:68>
 		__this->___generatorUnlocked = (bool)1;
 	}
 
-IL_0074:
+IL_0076:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:62>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:71>
+		bool L_13 = __this->___generatorUnlocked;
+		if (!L_13)
+		{
+			goto IL_00ae;
+		}
+	}
+	{
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_14 = __this->___buyPowerUpButton;
+		NullCheck(L_14);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15;
+		L_15 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_14, NULL);
+		NullCheck(L_15);
+		bool L_16;
+		L_16 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_15, NULL);
+		if (L_16)
+		{
+			goto IL_00ae;
+		}
+	}
+	{
+		float L_17 = __this->___seeds;
+		if ((!(((float)L_17) >= ((float)(10.0f)))))
+		{
+			goto IL_00ae;
+		}
+	}
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:73>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_18 = __this->___buyPowerUpButton;
+		NullCheck(L_18);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19;
+		L_19 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_18, NULL);
+		NullCheck(L_19);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)1, NULL);
+	}
+
+IL_00ae:
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:75>
 		return;
 	}
 }
-// Method Definition Index: 79617
+// Method Definition Index: 79620
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_Update_m8D0D68D611C4D503342FDE023639FD56AD2E3CAC (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1748,78 +1815,79 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_Update_m8D0D68D611C4D503342F
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:66>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:79>
 		float L_0 = __this->___water;
 		float L_1 = __this->___waterRate;
 		float L_2;
 		L_2 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___water = ((float)il2cpp_codegen_add(L_0, ((float)il2cpp_codegen_multiply(L_1, L_2))));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:67>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:80>
 		float L_3 = __this->___seeds;
 		float L_4 = __this->___seedRate;
-		float L_5;
-		L_5 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		__this->___seeds = ((float)il2cpp_codegen_add(L_3, ((float)il2cpp_codegen_multiply(L_4, L_5))));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:69>
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_6 = __this->___waterText;
-		float L_7 = __this->___water;
-		int32_t L_8;
-		L_8 = Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline(L_7, NULL);
-		V_0 = L_8;
-		String_t* L_9;
-		L_9 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_0), NULL);
+		float L_5 = __this->___multiplier;
+		float L_6;
+		L_6 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->___seeds = ((float)il2cpp_codegen_add(L_3, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_4, L_5)), L_6))));
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:82>
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_7 = __this->___waterText;
+		float L_8 = __this->___water;
+		int32_t L_9;
+		L_9 = Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline(L_8, NULL);
+		V_0 = L_9;
 		String_t* L_10;
-		L_10 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralD8044A8CED8EF0DC352208EE2EA220CC6211FF5C, L_9, NULL);
-		NullCheck(L_6);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_6, L_10);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:70>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___seedsUI;
-		NullCheck(L_11);
-		bool L_12;
-		L_12 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_11, NULL);
-		if (!L_12)
+		L_10 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_0), NULL);
+		String_t* L_11;
+		L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralD8044A8CED8EF0DC352208EE2EA220CC6211FF5C, L_10, NULL);
+		NullCheck(L_7);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_7, L_11);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:83>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___seedsUI;
+		NullCheck(L_12);
+		bool L_13;
+		L_13 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_12, NULL);
+		if (!L_13)
 		{
-			goto IL_008f;
+			goto IL_0096;
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:71>
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_13 = __this->___seedText;
-		float L_14 = __this->___seeds;
-		int32_t L_15;
-		L_15 = Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline(L_14, NULL);
-		V_0 = L_15;
-		String_t* L_16;
-		L_16 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_0), NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:84>
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_14 = __this->___seedText;
+		float L_15 = __this->___seeds;
+		int32_t L_16;
+		L_16 = Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline(L_15, NULL);
+		V_0 = L_16;
 		String_t* L_17;
-		L_17 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral6C251B43F3FC68CB2E4D7D256095FFA230BC30F8, L_16, NULL);
-		NullCheck(L_13);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_13, L_17);
+		L_17 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_0), NULL);
+		String_t* L_18;
+		L_18 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral6C251B43F3FC68CB2E4D7D256095FFA230BC30F8, L_17, NULL);
+		NullCheck(L_14);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_14, L_18);
 	}
 
-IL_008f:
+IL_0096:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:74>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:87>
 		FarmManager_CheckProgression_m12E088755B7358F06CD7CCF9F3512E09B9D137FF(__this, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:75>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:88>
 		FarmManager_HandleParticles_m231EB4DBB501278A18EAE55DFBEE4594E876691C(__this, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:76>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:89>
 		FarmManager_UpdateButtons_m223A6F4E4C41316601FEE15CB19DEDD44768D74F(__this, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:77>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:90>
 		return;
 	}
 }
-// Method Definition Index: 79618
+// Method Definition Index: 79621
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_HandleParticles_m231EB4DBB501278A18EAE55DFBEE4594E876691C (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:81>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:94>
 		float L_0 = __this->___waterTimer;
 		float L_1 = __this->___waterRate;
 		float L_2;
 		L_2 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___waterTimer = ((float)il2cpp_codegen_add(L_0, ((float)il2cpp_codegen_multiply(L_1, L_2))));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:82>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:95>
 		float L_3 = __this->___waterTimer;
 		if ((!(((float)L_3) >= ((float)(1.0f)))))
 		{
@@ -1827,18 +1895,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_HandleParticles_m231EB4DBB50
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:83>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:96>
 		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_4 = __this->___waterParticles;
 		NullCheck(L_4);
 		ParticleSystem_Emit_m3E9E6359087607E84E0D4D35844D80D9452AD72D(L_4, 1, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:84>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:97>
 		float L_5 = __this->___waterTimer;
 		__this->___waterTimer = ((float)il2cpp_codegen_subtract(L_5, (1.0f)));
 	}
 
 IL_0044:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:87>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:100>
 		float L_6 = __this->___seedRate;
 		if ((!(((float)L_6) > ((float)(0.0f)))))
 		{
@@ -1846,13 +1914,13 @@ IL_0044:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:88>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:101>
 		float L_7 = __this->___seedTimer;
 		float L_8 = __this->___seedRate;
 		float L_9;
 		L_9 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___seedTimer = ((float)il2cpp_codegen_add(L_7, ((float)il2cpp_codegen_multiply(L_8, L_9))));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:89>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:102>
 		float L_10 = __this->___seedTimer;
 		if ((!(((float)L_10) >= ((float)(1.0f)))))
 		{
@@ -1860,26 +1928,27 @@ IL_0044:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:90>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:103>
 		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_11 = __this->___seedParticles;
 		NullCheck(L_11);
 		ParticleSystem_Emit_m3E9E6359087607E84E0D4D35844D80D9452AD72D(L_11, 1, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:91>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:104>
 		float L_12 = __this->___seedTimer;
 		__this->___seedTimer = ((float)il2cpp_codegen_subtract(L_12, (1.0f)));
 	}
 
 IL_0095:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:94>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:107>
 		return;
 	}
 }
-// Method Definition Index: 79619
+// Method Definition Index: 79622
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_UpdateButtons_m223A6F4E4C41316601FEE15CB19DEDD44768D74F (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
 	bool V_1 = false;
+	bool V_2 = false;
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B3_0 = NULL;
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B2_0 = NULL;
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F G_B4_0;
@@ -1890,8 +1959,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_UpdateButtons_m223A6F4E4C413
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F G_B9_0;
 	memset((&G_B9_0), 0, sizeof(G_B9_0));
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B9_1 = NULL;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B13_0 = NULL;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B12_0 = NULL;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F G_B14_0;
+	memset((&G_B14_0), 0, sizeof(G_B14_0));
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B14_1 = NULL;
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:98>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:111>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->___unlockSeedsButton;
 		NullCheck(L_0);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
@@ -1905,16 +1979,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_UpdateButtons_m223A6F4E4C413
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:99>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:112>
 		float L_3 = __this->___water;
 		float L_4 = __this->___unlockCost;
 		V_0 = (bool)((((int32_t)((!(((float)L_3) >= ((float)L_4)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:100>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:113>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_5 = __this->___unlockSeedsButton;
 		bool L_6 = V_0;
 		NullCheck(L_5);
 		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_5, L_6, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:101>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:114>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_7 = __this->___unlockSeedsButton;
 		NullCheck(L_7);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_8;
@@ -1951,7 +2025,7 @@ IL_004a:
 
 IL_004f:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:104>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:117>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_12 = __this->___buyGenButton;
 		NullCheck(L_12);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13;
@@ -1965,16 +2039,16 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:105>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:118>
 		float L_15 = __this->___water;
 		float L_16 = __this->___genCost;
 		V_1 = (bool)((((int32_t)((!(((float)L_15) >= ((float)L_16)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:106>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:119>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_17 = __this->___buyGenButton;
 		bool L_18 = V_1;
 		NullCheck(L_17);
 		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_17, L_18, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:107>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:120>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_19 = __this->___buyGenButton;
 		NullCheck(L_19);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_20;
@@ -2011,49 +2085,191 @@ IL_0099:
 
 IL_009e:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:109>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:123>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_24 = __this->___buyPowerUpButton;
+		NullCheck(L_24);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25;
+		L_25 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_24, NULL);
+		NullCheck(L_25);
+		bool L_26;
+		L_26 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_25, NULL);
+		if (!L_26)
+		{
+			goto IL_00ed;
+		}
+	}
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:124>
+		float L_27 = __this->___seeds;
+		float L_28 = __this->___powerUpCost;
+		V_2 = (bool)((((int32_t)((!(((float)L_27) >= ((float)L_28)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:125>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_29 = __this->___buyPowerUpButton;
+		bool L_30 = V_2;
+		NullCheck(L_29);
+		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_29, L_30, NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:126>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_31 = __this->___buyPowerUpButton;
+		NullCheck(L_31);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_32;
+		L_32 = Selectable_get_image_m88664022F6BC90E7B8D4BFCBA7FE24B48E90C639(L_31, NULL);
+		bool L_33 = V_2;
+		if (L_33)
+		{
+			G_B13_0 = L_32;
+			goto IL_00e3;
+		}
+		G_B12_0 = L_32;
+	}
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_34;
+		L_34 = Color_get_gray_m6D01087E0F20F34718EBA5B213853B4BB49F1DEF(NULL);
+		G_B14_0 = L_34;
+		G_B14_1 = G_B12_0;
+		goto IL_00e8;
+	}
+
+IL_00e3:
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_35;
+		L_35 = Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline(NULL);
+		G_B14_0 = L_35;
+		G_B14_1 = G_B13_0;
+	}
+
+IL_00e8:
+	{
+		NullCheck(G_B14_1);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, G_B14_1, G_B14_0);
+	}
+
+IL_00ed:
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:128>
 		return;
 	}
 }
-// Method Definition Index: 79620
+// Method Definition Index: 79623
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_UnlockSeeds_m3151C120BEEBF9BB010784C16CC33BC341538FD1 (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:113>
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:132>
 		float L_0 = __this->___water;
 		float L_1 = __this->___unlockCost;
 		if ((!(((float)L_0) >= ((float)L_1))))
 		{
-			goto IL_0049;
+			goto IL_007d;
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:114>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:133>
 		float L_2 = __this->___water;
 		float L_3 = __this->___unlockCost;
 		__this->___water = ((float)il2cpp_codegen_subtract(L_2, L_3));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:115>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:134>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___seedsUI;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:116>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:135>
 		__this->___seeds = (5.0f);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:118>
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_5 = __this->___unlockSeedsButton;
-		NullCheck(L_5);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
-		L_6 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_5, NULL);
-		NullCheck(L_6);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:136>
+		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_5 = __this->___seedParticles;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:137>
+		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_7 = __this->___seedParticles;
+		NullCheck(L_7);
+		ParticleSystem_Emit_m3E9E6359087607E84E0D4D35844D80D9452AD72D(L_7, ((int32_t)10), NULL);
 	}
 
-IL_0049:
+IL_0053:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:120>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:139>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_8 = __this->___unlockSound;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_9;
+		L_9 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_9)
+		{
+			goto IL_006c;
+		}
+	}
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:139>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_10 = __this->___unlockSound;
+		NullCheck(L_10);
+		AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3(L_10, NULL);
+	}
+
+IL_006c:
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:140>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_11 = __this->___unlockSeedsButton;
+		NullCheck(L_11);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12;
+		L_12 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_11, NULL);
+		NullCheck(L_12);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)0, NULL);
+	}
+
+IL_007d:
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:142>
 		return;
 	}
 }
-// Method Definition Index: 79621
+// Method Definition Index: 79624
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_BuyPowerUp_mF2AEBD6146C0F80402E20E462CB82D8CC7C9F5B1 (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1A8EBD7CFFFF17E51D7F8D4E305EC07518F642FF);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:146>
+		float L_0 = __this->___seeds;
+		float L_1 = __this->___powerUpCost;
+		if ((!(((float)L_0) >= ((float)L_1))))
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:148>
+		float L_2 = __this->___seeds;
+		float L_3 = __this->___powerUpCost;
+		__this->___seeds = ((float)il2cpp_codegen_subtract(L_2, L_3));
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:149>
+		float L_4 = __this->___multiplier;
+		__this->___multiplier = ((float)il2cpp_codegen_multiply(L_4, (2.0f)));
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:153>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral1A8EBD7CFFFF17E51D7F8D4E305EC07518F642FF, NULL);
+	}
+
+IL_003d:
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:155>
+		return;
+	}
+}
+// Method Definition Index: 79625
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_BuySeedGenerator_m96C34E0E4B3BEA7BD72E5EBE986D19479EE6EBFE (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2070,117 +2286,114 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_BuySeedGenerator_m96C34E0E4B
 	memset((&V_1), 0, sizeof(V_1));
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_2 = NULL;
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:124>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:167>
 		float L_0 = __this->___water;
 		float L_1 = __this->___genCost;
 		if ((!(((float)L_0) >= ((float)L_1))))
 		{
-			goto IL_00eb;
+			goto IL_00e6;
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:125>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:168>
 		float L_2 = __this->___water;
 		float L_3 = __this->___genCost;
 		__this->___water = ((float)il2cpp_codegen_subtract(L_2, L_3));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:126>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:169>
 		int32_t L_4 = __this->___totalGenerators;
 		__this->___totalGenerators = ((int32_t)il2cpp_codegen_add(L_4, 1));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:128>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:171>
 		bool L_5 = __this->___packsTextShown;
 		if (L_5)
 		{
-			goto IL_0052;
+			goto IL_004d;
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:130>
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_6 = __this->___genCountText;
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:173>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___genUI;
 		NullCheck(L_6);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
-		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_6, NULL);
-		NullCheck(L_7);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)1, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:131>
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)1, NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:174>
 		__this->___packsTextShown = (bool)1;
 	}
 
-IL_0052:
+IL_004d:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:134>
-		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_8 = __this->___genCountText;
-		int32_t* L_9 = (int32_t*)(&__this->___totalGenerators);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:177>
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_7 = __this->___genCountText;
+		int32_t* L_8 = (int32_t*)(&__this->___totalGenerators);
+		String_t* L_9;
+		L_9 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_8, NULL);
 		String_t* L_10;
-		L_10 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_9, NULL);
-		String_t* L_11;
-		L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral82A9E982D64825AB1AFA9B9F05B6F95568FB02F1, L_10, NULL);
-		NullCheck(L_8);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_8, L_11);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:136>
-		float L_12 = __this->___seedRate;
-		__this->___seedRate = ((float)il2cpp_codegen_add(L_12, (0.5f)));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:138>
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:139>
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:140>
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:141>
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:142>
+		L_10 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral82A9E982D64825AB1AFA9B9F05B6F95568FB02F1, L_9, NULL);
+		NullCheck(L_7);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_7, L_10);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:179>
+		float L_11 = __this->___seedRate;
+		__this->___seedRate = ((float)il2cpp_codegen_add(L_11, (0.5f)));
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:181>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:182>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:183>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:184>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:185>
+		float L_12 = __this->___spawnRadius;
 		float L_13 = __this->___spawnRadius;
-		float L_14 = __this->___spawnRadius;
-		float L_15;
-		L_15 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494(((-L_13)), L_14, NULL);
+		float L_14;
+		L_14 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494(((-L_12)), L_13, NULL);
+		float L_15 = __this->___spawnRadius;
 		float L_16 = __this->___spawnRadius;
-		float L_17 = __this->___spawnRadius;
-		float L_18;
-		L_18 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494(((-L_16)), L_17, NULL);
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_0), L_15, (0.0f), L_18, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:144>
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19 = __this->___spawnPoint;
-		NullCheck(L_19);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
-		L_20 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_19, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = V_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
-		L_22 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_20, L_21, NULL);
-		V_1 = L_22;
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:146>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = __this->___seedPacketPrefab;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = V_1;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_25;
-		L_25 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		float L_17;
+		L_17 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494(((-L_15)), L_16, NULL);
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_0), L_14, (0.0f), L_17, NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:187>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18 = __this->___spawnPoint;
+		NullCheck(L_18);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_18, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
+		L_21 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_19, L_20, NULL);
+		V_1 = L_21;
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:189>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = __this->___seedPacketPrefab;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = V_1;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_24;
+		L_24 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26;
-		L_26 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_23, L_24, L_25, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
-		V_2 = L_26;
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:147>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = V_2;
-		NullCheck(L_27);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_28;
-		L_28 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_27, NULL);
-		RuntimeObject* L_29;
-		L_29 = FarmManager_GrowEase_mE3444CB19D2F181D581585456B40FEF7A9E324BC(__this, L_28, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_30;
-		L_30 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_29, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25;
+		L_25 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_22, L_23, L_24, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		V_2 = L_25;
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:190>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = V_2;
+		NullCheck(L_26);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27;
+		L_27 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_26, NULL);
+		RuntimeObject* L_28;
+		L_28 = FarmManager_GrowEase_mE3444CB19D2F181D581585456B40FEF7A9E324BC(__this, L_27, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_29;
+		L_29 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_28, NULL);
 	}
 
-IL_00eb:
+IL_00e6:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:149>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:192>
 		return;
 	}
 }
-// Method Definition Index: 79622
+// Method Definition Index: 79626
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FarmManager_GrowEase_mE3444CB19D2F181D581585456B40FEF7A9E324BC (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_target, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36* L_0 = (U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36*)il2cpp_codegen_object_new(U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36_il2cpp_TypeInfo_var);
-		U3CGrowEaseU3Ed__30__ctor_mB1A9A0F13504B3CB26E2F2B9ADBEA1B7598342ED(L_0, 0, NULL);
-		U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36* L_1 = L_0;
+		U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5* L_0 = (U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5*)il2cpp_codegen_object_new(U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5_il2cpp_TypeInfo_var);
+		U3CGrowEaseU3Ed__36__ctor_mA439D6D67FF8DE3E8B006E2B317CC9A382327D63(L_0, 0, NULL);
+		U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5* L_1 = L_0;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = ___0_target;
 		NullCheck(L_1);
 		L_1->___target = L_2;
@@ -2188,18 +2401,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FarmManager_GrowEase_mE3444CB1
 		return L_1;
 	}
 }
-// Method Definition Index: 79623
+// Method Definition Index: 79627
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager__ctor_m399163A1651F69832FA96504C26ED141AFB4176B (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, const RuntimeMethod* method) 
 {
 	{
 		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:10>
 		__this->___waterRate = (1.0f);
 		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:25>
+		__this->___powerUpCost = (50.0f);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:26>
+		__this->___multiplier = (1.0f);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:31>
 		__this->___unlockCost = (20.0f);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:30>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:36>
 		__this->___genCost = (10.0f);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:33>
-		__this->___spawnRadius = (0.200000003f);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:39>
+		__this->___spawnRadius = (0.5f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -2212,8 +2429,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager__ctor_m399163A1651F69832FA96
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79624
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGrowEaseU3Ed__30__ctor_mB1A9A0F13504B3CB26E2F2B9ADBEA1B7598342ED (U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+// Method Definition Index: 79628
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGrowEaseU3Ed__36__ctor_mA439D6D67FF8DE3E8B006E2B317CC9A382327D63 (U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -2222,15 +2439,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGrowEaseU3Ed__30__ctor_mB1A9A0F13504B
 		return;
 	}
 }
-// Method Definition Index: 79625
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGrowEaseU3Ed__30_System_IDisposable_Dispose_mE23EE988F076482287EA7C14A33DF54971AF1CC5 (U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36* __this, const RuntimeMethod* method) 
+// Method Definition Index: 79629
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGrowEaseU3Ed__36_System_IDisposable_Dispose_mE516FFD70752C0B69DACDB6B69FE46E03C20FA1B (U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 79626
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CGrowEaseU3Ed__30_MoveNext_m797D4E3228AE38AFFF3EC852E9715110EBE5D873 (U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36* __this, const RuntimeMethod* method) 
+// Method Definition Index: 79630
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CGrowEaseU3Ed__36_MoveNext_mD5AB3731B2E2C54072EEBF3F5D3516748D7C05ED (U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	float V_1 = 0.0f;
@@ -2259,17 +2476,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CGrowEaseU3Ed__30_MoveNext_m797D4E3228
 IL_0013:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:153>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:196>
 		__this->___U3CdurationU3E5__2 = (0.5f);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:154>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:197>
 		__this->___U3CelapsedU3E5__3 = (0.0f);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:155>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:198>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = __this->___target;
 		NullCheck(L_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_3, NULL);
 		__this->___U3CendScaleU3E5__4 = L_4;
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:156>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:199>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___target;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
 		L_6 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
@@ -2280,18 +2497,18 @@ IL_0013:
 
 IL_0053:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:159>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:202>
 		float L_7 = __this->___U3CelapsedU3E5__3;
 		float L_8;
 		L_8 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___U3CelapsedU3E5__3 = ((float)il2cpp_codegen_add(L_7, L_8));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:160>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:203>
 		float L_9 = __this->___U3CelapsedU3E5__3;
 		float L_10 = __this->___U3CdurationU3E5__2;
 		V_1 = ((float)(L_9/L_10));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:162>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:205>
 		V_2 = (1.70158005f);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:163>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:206>
 		float L_11 = V_1;
 		float L_12 = ((float)il2cpp_codegen_subtract(L_11, (1.0f)));
 		V_1 = L_12;
@@ -2300,7 +2517,7 @@ IL_0053:
 		float L_15 = V_1;
 		float L_16 = V_2;
 		V_3 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_12, L_13)), ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_add(L_14, (1.0f))), L_15)), L_16)))), (1.0f)));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:165>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:208>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = __this->___target;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = __this->___U3CendScaleU3E5__4;
 		float L_19 = V_3;
@@ -2308,7 +2525,7 @@ IL_0053:
 		L_20 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_18, L_19, NULL);
 		NullCheck(L_17);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_17, L_20, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:166>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:209>
 		__this->___U3CU3E2__current = NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)NULL);
 		__this->___U3CU3E1__state = 1;
@@ -2322,7 +2539,7 @@ IL_00be:
 
 IL_00c5:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:158>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:201>
 		float L_21 = __this->___U3CelapsedU3E5__3;
 		float L_22 = __this->___U3CdurationU3E5__2;
 		if ((((float)L_21) < ((float)L_22)))
@@ -2331,34 +2548,34 @@ IL_00c5:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:168>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:211>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23 = __this->___target;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = __this->___U3CendScaleU3E5__4;
 		NullCheck(L_23);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_23, L_24, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:169>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:212>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 79627
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CGrowEaseU3Ed__30_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m218C938DFDE855EAB944D0DABDCB066E6CC331C9 (U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36* __this, const RuntimeMethod* method) 
+// Method Definition Index: 79631
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CGrowEaseU3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m111EAEB1D507A9EAD4241AF83F7B3DD82499EEA4 (U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
 		return L_0;
 	}
 }
-// Method Definition Index: 79628
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGrowEaseU3Ed__30_System_Collections_IEnumerator_Reset_m8DD4308D2F5D38AD30BCD38BC636309798A9AB7E (U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36* __this, const RuntimeMethod* method) 
+// Method Definition Index: 79632
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGrowEaseU3Ed__36_System_Collections_IEnumerator_Reset_m6235DE3E22FBF6AB1C7CD50B51CE03156C9D7DB4 (U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CGrowEaseU3Ed__30_System_Collections_IEnumerator_Reset_m8DD4308D2F5D38AD30BCD38BC636309798A9AB7E_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CGrowEaseU3Ed__36_System_Collections_IEnumerator_Reset_m6235DE3E22FBF6AB1C7CD50B51CE03156C9D7DB4_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 79629
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CGrowEaseU3Ed__30_System_Collections_IEnumerator_get_Current_m5A5596D8500900E72500B06BDD27AABDF1B14038 (U3CGrowEaseU3Ed__30_tE247F7E60D5FDCD7637B64215949ECF7BE919C36* __this, const RuntimeMethod* method) 
+// Method Definition Index: 79633
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CGrowEaseU3Ed__36_System_Collections_IEnumerator_get_Current_mBB66761C479469C338DA206064356171CE8B8E81 (U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -2373,7 +2590,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CGrowEaseU3Ed__30_System_Col
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79630
+// Method Definition Index: 79634
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2389,7 +2606,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A90
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79631
+// Method Definition Index: 79635
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2405,7 +2622,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79632
+// Method Definition Index: 79636
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2439,7 +2656,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC
 		return L_6;
 	}
 }
-// Method Definition Index: 79633
+// Method Definition Index: 79637
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{

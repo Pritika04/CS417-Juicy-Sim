@@ -20,18 +20,25 @@ public class FarmManager : MonoBehaviour
     public ParticleSystem seedParticles;
     private float seedTimer;
 
+    [Header("Feature 3: Power-ups (Haptics)")]
+    public Button buyPowerUpButton;
+    public float powerUpCost = 50f;
+    public float multiplier = 1.0f;
+    // public ActionBasedController controller;
+
     [Header("Feature 4: Unlock UI")]
     public Button unlockSeedsButton;
     public float unlockCost = 20f;
-    // public AudioSource unlockSound;
+    public AudioSource unlockSound;
 
     [Header("Feature 2: Generators")]
     public Button buyGenButton;
     public float genCost = 10f;
     public GameObject seedPacketPrefab;
     public Transform spawnPoint;
-    public float spawnRadius = 0.2f;
+    public float spawnRadius = 1.0f;
     public TextMeshProUGUI genCountText;
+    public GameObject genUI;
     private int totalGenerators = 0;
 
     bool unlockSeedsButtonShown = false;
@@ -43,28 +50,34 @@ public class FarmManager : MonoBehaviour
         seedsUI.SetActive(false);
         unlockSeedsButton.gameObject.SetActive(false);
         buyGenButton.gameObject.SetActive(false);
-        genCountText.gameObject.SetActive(false);
+        genUI.SetActive(false);
+        buyPowerUpButton.gameObject.SetActive(false);
     }
 
     void CheckProgression()
     {
-        if (!unlockSeedsButtonShown && water >= 20)
+        if (!unlockSeedsButtonShown && water >= unlockCost)
         {
             unlockSeedsButton.gameObject.SetActive(true);
             unlockSeedsButtonShown = true;
         }
 
-        if (!generatorUnlocked && seedsUI.activeSelf && water >= 20 && seeds >= 5)
+        if (!generatorUnlocked && seedsUI.activeSelf && water >= unlockCost && seeds >= 5)
         {
             buyGenButton.gameObject.SetActive(true);
             generatorUnlocked = true;
+        }
+        
+        if (generatorUnlocked && !buyPowerUpButton.gameObject.activeSelf && seeds >= 10)
+        {
+            buyPowerUpButton.gameObject.SetActive(true);
         }
     }
 
     void Update()
     {
         water += waterRate * Time.deltaTime;
-        seeds += seedRate * Time.deltaTime;
+        seeds += (seedRate * multiplier) * Time.deltaTime;
 
         waterText.text = "Water: " + Mathf.FloorToInt(water);
         if (seedsUI.activeSelf) {
@@ -106,6 +119,12 @@ public class FarmManager : MonoBehaviour
             buyGenButton.interactable = canBuy;
             buyGenButton.image.color = canBuy ? Color.green : Color.gray;
         }
+
+        if (buyPowerUpButton.gameObject.activeSelf) {
+            bool canAfford = seeds >= powerUpCost;
+            buyPowerUpButton.interactable = canAfford;
+            buyPowerUpButton.image.color = canAfford ? Color.green : Color.gray;
+        }
     }
 
     public void UnlockSeeds()
@@ -114,10 +133,48 @@ public class FarmManager : MonoBehaviour
             water -= unlockCost;
             seedsUI.SetActive(true);
             seeds = 5;
-            // if (unlockSound != null) unlockSound.Play(); -- TODO
+
+            if (seedParticles != null) {
+                seedParticles.Emit(20); 
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                Vector3 randomOffset = new Vector3(
+                    Random.Range(-spawnRadius, spawnRadius),
+                    0,
+                    Random.Range(-spawnRadius, spawnRadius)
+                );
+                Vector3 spawnPos = spawnPoint.position + randomOffset;
+                GameObject newPack = Instantiate(seedPacketPrefab, spawnPos, Quaternion.identity);
+                StartCoroutine(GrowEase(newPack.transform));
+            }
+
+            if (unlockSound != null) unlockSound.Play();
             unlockSeedsButton.gameObject.SetActive(false);
         }
     }
+
+    public void BuyPowerUp()
+    {
+        if (seeds >= powerUpCost)
+        {
+            seeds -= powerUpCost;
+            multiplier *= 2.0f;
+        
+            // TriggerHaptic(0.5f, 0.2f); 
+            
+            Debug.Log("Power-up Purchased! Rate Multiplied.");
+        }
+    }
+
+    // public void TriggerHaptic(float intensity, float duration)
+    // {
+    //     if (controller != null)
+    //     {
+    //         controller.SendHapticImpulse(intensity, duration);
+    //     }
+    // }
 
     public void BuySeedGenerator()
     {
@@ -127,7 +184,7 @@ public class FarmManager : MonoBehaviour
 
             if (!packsTextShown)
             {
-                genCountText.gameObject.SetActive(true);
+                genUI.SetActive(true);
                 packsTextShown = true;
             }
 
