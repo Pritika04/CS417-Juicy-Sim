@@ -15,15 +15,39 @@ struct VirtualActionInvoker1
 		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
+template <typename R, typename T1, typename T2>
+struct VirtualFuncInvoker2
+{
+	typedef R (*Func)(void*, T1, T2, const RuntimeMethod*);
 
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+
+struct Action_1_tBE7729820CBA793D8D5D57207BA5938B012863C5;
+struct Action_1_t9A06C49FCB3ADF4C984887951A3DC1DA07CFFBF0;
 struct Action_1_tB93AB717F9D419A1BEC832FF76E74EAA32184CC1;
+struct BindableVariable_1_tAB8C2D23769D801C8E39D4AA927DD23AF0E6816C;
+struct Dictionary_2_tA13026C91A8E0CE5AB55DC00628A33C71D2BE3F2;
+struct Dictionary_2_tBF02F25A38E519F312D7EF1C8B204EBDC91AB9A1;
 struct Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180;
+struct ExposedRegistrationList_1_t5A8F910702E4299554291FBA6E5E87D64C1EAE66;
+struct ExposedRegistrationList_1_t049303BDFCFEC5779F414D57C6B8C379C73E1D0F;
 struct Func_3_tC721DF8CDD07ED66A4833A19A2ED2302608C906C;
 struct Func_3_t6F6D9932638EA1A5A45303C6626C818C25D164E5;
+struct HashSetList_1_t52A6279CDC8FAE4460A87A1B6A5E3437D58F5AE2;
+struct HashSetList_1_tF3CBA0C6731B032420F2FEC573A03EE7A351CBC4;
+struct HashSetList_1_t1A0488B6A7A99FC77B3DC8ADC7C241B5B2F21789;
 struct List_1_t2CDCA768E7F493F5EDEBC75AEB200FD621354E35;
+struct List_1_t96062976A34EF744BABF4798339ADC3741F0CF6C;
 struct List_1_tE6BB71ABF15905EFA2BE92C38A2716547AEADB19;
 struct List_1_t3A076A19AF26E22A128C32B5C19804DDD2877607;
+struct List_1_t9A2E2984B23260AECDFA90CEB1F2887075FA4DF3;
 struct TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4;
+struct UnityObjectReferenceCache_2_tE99191D5351A0E7FAC9799B6A790D4532F56BDC1;
 struct TMP_TextProcessingStack_1U5BU5D_t08293E0BB072311BB96170F351D1083BCA97B9B2;
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
@@ -51,7 +75,9 @@ struct WordWrapStateU5BU5D_t473D59C9DBCC949CE72EF1EB471CBA152A6CEAC9;
 struct SectionU5BU5D_t9D3017555FFF42E71BE91904A2486EAF429F24C4;
 struct TextProcessingElementU5BU5D_tC3E97D1672C8DB6E1F91DB2C0987D0ED9A2E7113;
 struct AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074;
+struct Animator_t8A52E42AE54F76681838FE9E632683EF3952E883;
 struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
+struct BaseInteractionEventArgs_t8B38B6C63C6C9EA4BD179EF5FD40106872B82D7E;
 struct Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098;
 struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
 struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26;
@@ -61,9 +87,18 @@ struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
 struct FarmManager_tF10AFA078805BAAA799E002E329268C92B137686;
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
+struct HapticImpulseSingleChannelGroup_t2C3B05E8445A863B629E78827F7206BC7E403A28;
+struct HapticTrigger_tDEFF29C05D62F279D1A469F722FC37FA2DE03EE4;
+struct HoverEnterEvent_t2BDBCA14FF94DA18C9AC12B43297F6C1641788AB;
+struct HoverExitEvent_t256704BC79FE0AA61EB2DE3FDDF43A1FC97F5832;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
 struct ITextPreprocessor_tDBB49C8B68D7B80E8D233B9D9666C43981EFAAB9;
+struct IXRInteractable_t094DA697CF40A061C2820FDE5B5838D08D7E9609;
+struct IXRInteractionGroup_tE179A88275A6C646BAC9BF131BDE92552FC664C0;
+struct IXRInteractor_tD834ADD95D200FFEC6473A23E515DCD02B33CF97;
+struct IXRSelectInteractable_t647A7E3382497396EA1A9546574AEC0FBC9BC4AF;
+struct IXRTargetFilter_t51750E0C671ECA90F38CC75BCD395285E61D2778;
 struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E;
 struct LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A;
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
@@ -77,6 +112,8 @@ struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
 struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5;
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A;
+struct SelectEnterEvent_tBA2614C8C25D8794D5804C4F66195D74E64FC5D0;
+struct SelectExitEvent_t15DC0A39F9657BA9E6BAE6250D8D64C9671201F6;
 struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712;
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
 struct String_t;
@@ -96,11 +133,18 @@ struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7;
 struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E;
 struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+struct XRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C;
+struct XRBaseInteractable_t76185BD6DF3BC86B3CDD82E6368C3C7157E39AE4;
+struct XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4;
+struct XRBaseTargetFilter_t24D9DBCEA900DFEA08D543C91DFC070C1C91594F;
+struct XRControllerState_tC34C40CB942A51408D8799940A87A6AD87218B50;
+struct XRInteractionManager_t93C7F7F0CFEAD83E1A70F92D05B0E663483746CD;
 struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C;
 struct U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 struct Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401;
 struct MissingCharacterEventCallback_t955241181324E0FEF9A9BDBA400E8780F8979DE6;
+struct HapticImpulseChannel_t80F289E3894B24D7149F6C528A83326DC585B043;
 
 IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
@@ -110,12 +154,14 @@ IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_i
 IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____59469F7B5C3DDC90DE916194382E7F2D1CA7F4563AB6E0D6DD1CBCF935A8372F_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____BD2BDF84DEC502A1B3A5D2C40CF4849E846300E0F73DC56DB49342D158C3C91F_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____5C5C153E7D2D3980B4A7207ED96948EEC12A46A0DC231456DACF9AF0F2063AE0_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____D8B0E4D19DA50C5F9FED40DC972DBD2F0B738D83091C757DE0E7981CDC3B1C7E_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral1A8EBD7CFFFF17E51D7F8D4E305EC07518F642FF;
 IL2CPP_EXTERN_C String_t* _stringLiteral6C251B43F3FC68CB2E4D7D256095FFA230BC30F8;
 IL2CPP_EXTERN_C String_t* _stringLiteral82A9E982D64825AB1AFA9B9F05B6F95568FB02F1;
 IL2CPP_EXTERN_C String_t* _stringLiteralD8044A8CED8EF0DC352208EE2EA220CC6211FF5C;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisXRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C_m8E92B551DCA686A050AFE3442EABB96847D598C7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CGrowEaseU3Ed__36_System_Collections_IEnumerator_Reset_m6235DE3E22FBF6AB1C7CD50B51CE03156C9D7DB4_RuntimeMethod_var;
 struct Exception_t_marshaled_com;
@@ -136,6 +182,11 @@ struct U3CModuleU3E_tBB65183F1134474D09FF49B95625D25472B9BA8B
 };
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA  : public RuntimeObject
 {
+};
+struct BaseInteractionEventArgs_t8B38B6C63C6C9EA4BD179EF5FD40106872B82D7E  : public RuntimeObject
+{
+	RuntimeObject* ___U3CinteractorObjectU3Ek__BackingField;
+	RuntimeObject* ___U3CinteractableObjectU3Ek__BackingField;
 };
 struct String_t  : public RuntimeObject
 {
@@ -295,6 +346,32 @@ struct IntPtr_t
 {
 	void* ___m_value;
 };
+struct InteractionLayerMask_t3B3480A4A5E1E0C43314C0D2CEB3BB39175E1FD4 
+{
+	uint32_t ___m_Bits;
+	int32_t ___m_Mask;
+};
+struct InteractionState_tA1AFAB17758E43BA3F654BEAD6A61A05992003AB 
+{
+	float ___m_Value;
+	bool ___m_Active;
+	bool ___m_ActivatedThisFrame;
+	bool ___m_DeactivatedThisFrame;
+};
+struct InteractionState_tA1AFAB17758E43BA3F654BEAD6A61A05992003AB_marshaled_pinvoke
+{
+	float ___m_Value;
+	int32_t ___m_Active;
+	int32_t ___m_ActivatedThisFrame;
+	int32_t ___m_DeactivatedThisFrame;
+};
+struct InteractionState_tA1AFAB17758E43BA3F654BEAD6A61A05992003AB_marshaled_com
+{
+	float ___m_Value;
+	int32_t ___m_Active;
+	int32_t ___m_ActivatedThisFrame;
+	int32_t ___m_DeactivatedThisFrame;
+};
 struct MaterialReference_tFD98FFFBBDF168028E637446C6676507186F4D0B 
 {
 	int32_t ___index;
@@ -438,7 +515,7 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 	};
 };
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D48_tB184AFC7E0116F4B6DAFA18B66C9B248A3A9F2FE 
+struct __StaticArrayInitTypeSizeU3D124_t84A22ABFB58211F8CBA676810E7650A221C13A80 
 {
 	union
 	{
@@ -448,12 +525,12 @@ struct __StaticArrayInitTypeSizeU3D48_tB184AFC7E0116F4B6DAFA18B66C9B248A3A9F2FE
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D48_tB184AFC7E0116F4B6DAFA18B66C9B248A3A9F2FE__padding[48];
+		uint8_t __StaticArrayInitTypeSizeU3D124_t84A22ABFB58211F8CBA676810E7650A221C13A80__padding[124];
 	};
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D84_t9CAC1B1FF7C797961D00EA13F20F629B9C2B6BD9 
+struct __StaticArrayInitTypeSizeU3D67_t5D67223986A9E82CE347E3F844E42C5BC464C288 
 {
 	union
 	{
@@ -463,7 +540,7 @@ struct __StaticArrayInitTypeSizeU3D84_t9CAC1B1FF7C797961D00EA13F20F629B9C2B6BD9
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D84_t9CAC1B1FF7C797961D00EA13F20F629B9C2B6BD9__padding[84];
+		uint8_t __StaticArrayInitTypeSizeU3D67_t5D67223986A9E82CE347E3F844E42C5BC464C288__padding[67];
 	};
 };
 #pragma pack(pop, tp)
@@ -650,6 +727,10 @@ struct HorizontalAlignmentOptions_tCC21260E9FBEC656BA7783643ED5F44AFF7955A1
 {
 	int32_t ___value__;
 };
+struct InteractorHandedness_t235041BA6D69977D466533780BB6B3F6A69AE499 
+{
+	int32_t ___value__;
+};
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
 	intptr_t ___m_CachedPtr;
@@ -671,6 +752,10 @@ struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5
 	intptr_t ___value;
 };
 struct TMP_TextElementType_t51EE6662436732F22C6B599F5757B7F35F706342 
+{
+	int32_t ___value__;
+};
+struct TargetPriorityMode_t4A1A7D2CB3263AD5E8C9610A49B27A208CC6C259 
 {
 	int32_t ___value__;
 };
@@ -735,6 +820,10 @@ struct Transition_tF856A77C9FAC6D26EA3CA158CF68B739D35397B3
 	int32_t ___value__;
 };
 struct TextInputSources_t41387D6C9CB16E60390F47A15AEB8185BE966D26 
+{
+	int32_t ___value__;
+};
+struct UpdateType_tC4A820B292EBF2F240DB4AC578DA56EFB6D59F0E 
 {
 	int32_t ___value__;
 };
@@ -1122,8 +1211,84 @@ struct FarmManager_tF10AFA078805BAAA799E002E329268C92B137686  : public MonoBehav
 	bool ___generatorUnlocked;
 	bool ___packsTextShown;
 };
+struct HapticTrigger_tDEFF29C05D62F279D1A469F722FC37FA2DE03EE4  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	float ___intensity;
+	float ___duration;
+};
 struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+};
+struct XRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	int32_t ___m_UpdateTrackingType;
+	bool ___m_EnableInputTracking;
+	bool ___m_EnableInputActions;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_ModelPrefab;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_ModelParent;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_Model;
+	bool ___m_AnimateModel;
+	String_t* ___m_ModelSelectTransition;
+	String_t* ___m_ModelDeSelectTransition;
+	bool ___m_HideControllerModel;
+	InteractionState_tA1AFAB17758E43BA3F654BEAD6A61A05992003AB ___m_SelectInteractionState;
+	InteractionState_tA1AFAB17758E43BA3F654BEAD6A61A05992003AB ___m_ActivateInteractionState;
+	InteractionState_tA1AFAB17758E43BA3F654BEAD6A61A05992003AB ___m_UIPressInteractionState;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_UIScrollValue;
+	XRControllerState_tC34C40CB942A51408D8799940A87A6AD87218B50* ___m_ControllerState;
+	bool ___m_CreateControllerState;
+	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___m_ModelAnimator;
+	bool ___m_HasWarnedAnimatorMissing;
+	bool ___m_PerformSetup;
+	HapticImpulseChannel_t80F289E3894B24D7149F6C528A83326DC585B043* ___m_HapticChannel;
+	HapticImpulseSingleChannelGroup_t2C3B05E8445A863B629E78827F7206BC7E403A28* ___m_HapticChannelGroup;
+};
+struct XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Action_1_tBE7729820CBA793D8D5D57207BA5938B012863C5* ___registered;
+	Action_1_t9A06C49FCB3ADF4C984887951A3DC1DA07CFFBF0* ___unregistered;
+	XRInteractionManager_t93C7F7F0CFEAD83E1A70F92D05B0E663483746CD* ___m_InteractionManager;
+	RuntimeObject* ___U3CcontainingGroupU3Ek__BackingField;
+	InteractionLayerMask_t3B3480A4A5E1E0C43314C0D2CEB3BB39175E1FD4 ___m_InteractionLayers;
+	int32_t ___m_Handedness;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_AttachTransform;
+	bool ___m_KeepSelectedTargetValid;
+	bool ___m_DisableVisualsWhenBlockedInGroup;
+	XRBaseInteractable_t76185BD6DF3BC86B3CDD82E6368C3C7157E39AE4* ___m_StartingSelectedInteractable;
+	XRBaseTargetFilter_t24D9DBCEA900DFEA08D543C91DFC070C1C91594F* ___m_StartingTargetFilter;
+	bool ___m_AutoFindParentInteractableInHierarchy;
+	Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___m_ParentInteractableObject;
+	UnityObjectReferenceCache_2_tE99191D5351A0E7FAC9799B6A790D4532F56BDC1* ___m_ParentInteractableObjectReference;
+	HoverEnterEvent_t2BDBCA14FF94DA18C9AC12B43297F6C1641788AB* ___m_HoverEntered;
+	HoverExitEvent_t256704BC79FE0AA61EB2DE3FDDF43A1FC97F5832* ___m_HoverExited;
+	SelectEnterEvent_tBA2614C8C25D8794D5804C4F66195D74E64FC5D0* ___m_SelectEntered;
+	SelectExitEvent_t15DC0A39F9657BA9E6BAE6250D8D64C9671201F6* ___m_SelectExited;
+	RuntimeObject* ___m_TargetFilter;
+	bool ___m_AllowHover;
+	bool ___m_AllowSelect;
+	bool ___m_IsPerformingManualInteraction;
+	HashSetList_1_t52A6279CDC8FAE4460A87A1B6A5E3437D58F5AE2* ___m_InteractablesHovered;
+	bool ___U3ChasHoverU3Ek__BackingField;
+	HashSetList_1_t1A0488B6A7A99FC77B3DC8ADC7C241B5B2F21789* ___m_InteractablesSelected;
+	RuntimeObject* ___U3CfirstInteractableSelectedU3Ek__BackingField;
+	bool ___U3ChasSelectionU3Ek__BackingField;
+	List_1_t9A2E2984B23260AECDFA90CEB1F2887075FA4DF3* ___m_StartingHoverFilters;
+	ExposedRegistrationList_1_t5A8F910702E4299554291FBA6E5E87D64C1EAE66* ___m_HoverFilters;
+	List_1_t9A2E2984B23260AECDFA90CEB1F2887075FA4DF3* ___m_StartingSelectFilters;
+	ExposedRegistrationList_1_t049303BDFCFEC5779F414D57C6B8C379C73E1D0F* ___m_SelectFilters;
+	BindableVariable_1_tAB8C2D23769D801C8E39D4AA927DD23AF0E6816C* ___m_LargestInteractionStrength;
+	bool ___m_ClearedLargestInteractionStrength;
+	Dictionary_2_tBF02F25A38E519F312D7EF1C8B204EBDC91AB9A1* ___m_AttachPoseOnSelect;
+	Dictionary_2_tBF02F25A38E519F312D7EF1C8B204EBDC91AB9A1* ___m_LocalAttachPoseOnSelect;
+	HashSetList_1_tF3CBA0C6731B032420F2FEC573A03EE7A351CBC4* ___m_InteractionStrengthInteractables;
+	Dictionary_2_tA13026C91A8E0CE5AB55DC00628A33C71D2BE3F2* ___m_InteractionStrengths;
+	RuntimeObject* ___m_ManualInteractionInteractable;
+	XRInteractionManager_t93C7F7F0CFEAD83E1A70F92D05B0E663483746CD* ___m_RegisteredInteractionManager;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_XROriginTransform;
+	bool ___m_HasXROrigin;
+	bool ___m_FailedToFindXROrigin;
+	int32_t ___U3CtargetPriorityModeU3Ek__BackingField;
+	List_1_t96062976A34EF744BABF4798339ADC3741F0CF6C* ___U3CtargetsForSelectionU3Ek__BackingField;
 };
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931  : public UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D
 {
@@ -1444,8 +1609,8 @@ struct TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957  : public TMP_T
 };
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D48_tB184AFC7E0116F4B6DAFA18B66C9B248A3A9F2FE ___59469F7B5C3DDC90DE916194382E7F2D1CA7F4563AB6E0D6DD1CBCF935A8372F;
-	__StaticArrayInitTypeSizeU3D84_t9CAC1B1FF7C797961D00EA13F20F629B9C2B6BD9 ___BD2BDF84DEC502A1B3A5D2C40CF4849E846300E0F73DC56DB49342D158C3C91F;
+	__StaticArrayInitTypeSizeU3D124_t84A22ABFB58211F8CBA676810E7650A221C13A80 ___5C5C153E7D2D3980B4A7207ED96948EEC12A46A0DC231456DACF9AF0F2063AE0;
+	__StaticArrayInitTypeSizeU3D67_t5D67223986A9E82CE347E3F844E42C5BC464C288 ___D8B0E4D19DA50C5F9FED40DC972DBD2F0B738D83091C757DE0E7981CDC3B1C7E;
 };
 struct String_t_StaticFields
 {
@@ -1476,6 +1641,11 @@ struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 {
 	int32_t ___OffsetOfInstanceIDInCPlusPlusObject;
+};
+struct XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4_StaticFields
+{
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_ProcessInteractionStrengthMarker;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___s_ProcessInteractionStrengthEventMarker;
 };
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
 {
@@ -1589,6 +1759,7 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArr
 
 
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m249A6BA4F2F19C2D3CE217D4D31847DF0EF03EFE_gshared (RuntimeObject* ___0_original, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotation, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponentInParent_TisRuntimeObject_m6746D6BB99912B1B509746C993906492F86CD119_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
@@ -1606,8 +1777,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_tBC1D03F63BF71132E9A5E472B8742F172A011E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_gray_m6D01087E0F20F34718EBA5B213853B4BB49F1DEF (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494 (float ___0_minInclusive, float ___1_maxInclusive, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
@@ -1620,6 +1789,8 @@ inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FarmManager_GrowEase_mE3444CB19D2F181D581585456B40FEF7A9E324BC (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_target, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGrowEaseU3Ed__36__ctor_mA439D6D67FF8DE3E8B006E2B317CC9A382327D63 (U3CGrowEaseU3Ed__36_tD2075FB2410650FF6F5505F6276A91DBD6795BB5* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
@@ -1628,6 +1799,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* BaseInteractionEventArgs_get_interactorObject_m1E083EA51BDA42FDAD94DE824E82C83AA719F4EF_inline (BaseInteractionEventArgs_t8B38B6C63C6C9EA4BD179EF5FD40106872B82D7E* __this, const RuntimeMethod* method) ;
+inline XRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C* Component_GetComponentInParent_TisXRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C_m8E92B551DCA686A050AFE3442EABB96847D598C7 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  XRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentInParent_TisRuntimeObject_m6746D6BB99912B1B509746C993906492F86CD119_gshared)(__this, method);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) ;
@@ -1648,36 +1824,36 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_Start_m03CAB4FECE5E9F506F29826BAC5229F1A82B90A7 (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:50>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:49>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___seedsUI;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:51>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:50>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_1 = __this->___unlockSeedsButton;
 		NullCheck(L_1);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_1, NULL);
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:52>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:51>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_3 = __this->___buyGenButton;
 		NullCheck(L_3);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
 		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:53>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:52>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___genUI;
 		NullCheck(L_5);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:54>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:53>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_6 = __this->___buyPowerUpButton;
 		NullCheck(L_6);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
 		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_6, NULL);
 		NullCheck(L_7);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:55>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:54>
 		return;
 	}
 }
@@ -1685,7 +1861,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_Start_m03CAB4FECE5E9F506F298
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_CheckProgression_m12E088755B7358F06CD7CCF9F3512E09B9D137FF (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:59>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:58>
 		bool L_0 = __this->___unlockSeedsButtonShown;
 		if (L_0)
 		{
@@ -1701,20 +1877,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_CheckProgression_m12E088755B
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:61>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:60>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_3 = __this->___unlockSeedsButton;
 		NullCheck(L_3);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
 		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:62>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:61>
 		__this->___unlockSeedsButtonShown = (bool)1;
 	}
 
 IL_002e:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:65>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:64>
 		bool L_5 = __this->___generatorUnlocked;
 		if (L_5)
 		{
@@ -1747,20 +1923,20 @@ IL_002e:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:67>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:66>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_11 = __this->___buyGenButton;
 		NullCheck(L_11);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12;
 		L_12 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_11, NULL);
 		NullCheck(L_12);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)1, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:68>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:67>
 		__this->___generatorUnlocked = (bool)1;
 	}
 
 IL_0076:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:71>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:70>
 		bool L_13 = __this->___generatorUnlocked;
 		if (!L_13)
 		{
@@ -1788,7 +1964,7 @@ IL_0076:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:73>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:72>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_18 = __this->___buyPowerUpButton;
 		NullCheck(L_18);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19;
@@ -1799,7 +1975,7 @@ IL_0076:
 
 IL_00ae:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:75>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:74>
 		return;
 	}
 }
@@ -1815,20 +1991,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_Update_m8D0D68D611C4D503342F
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:79>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:78>
 		float L_0 = __this->___water;
 		float L_1 = __this->___waterRate;
 		float L_2;
 		L_2 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___water = ((float)il2cpp_codegen_add(L_0, ((float)il2cpp_codegen_multiply(L_1, L_2))));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:80>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:79>
 		float L_3 = __this->___seeds;
 		float L_4 = __this->___seedRate;
 		float L_5 = __this->___multiplier;
 		float L_6;
 		L_6 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___seeds = ((float)il2cpp_codegen_add(L_3, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_4, L_5)), L_6))));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:82>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:81>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_7 = __this->___waterText;
 		float L_8 = __this->___water;
 		int32_t L_9;
@@ -1840,7 +2016,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_Update_m8D0D68D611C4D503342F
 		L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralD8044A8CED8EF0DC352208EE2EA220CC6211FF5C, L_10, NULL);
 		NullCheck(L_7);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_7, L_11);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:83>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:82>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___seedsUI;
 		NullCheck(L_12);
 		bool L_13;
@@ -1851,7 +2027,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_Update_m8D0D68D611C4D503342F
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:84>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:83>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_14 = __this->___seedText;
 		float L_15 = __this->___seeds;
 		int32_t L_16;
@@ -1867,13 +2043,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_Update_m8D0D68D611C4D503342F
 
 IL_0096:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:87>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:86>
 		FarmManager_CheckProgression_m12E088755B7358F06CD7CCF9F3512E09B9D137FF(__this, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:88>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:87>
 		FarmManager_HandleParticles_m231EB4DBB501278A18EAE55DFBEE4594E876691C(__this, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:89>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:88>
 		FarmManager_UpdateButtons_m223A6F4E4C41316601FEE15CB19DEDD44768D74F(__this, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:90>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:89>
 		return;
 	}
 }
@@ -1881,13 +2057,13 @@ IL_0096:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_HandleParticles_m231EB4DBB501278A18EAE55DFBEE4594E876691C (FarmManager_tF10AFA078805BAAA799E002E329268C92B137686* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:94>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:93>
 		float L_0 = __this->___waterTimer;
 		float L_1 = __this->___waterRate;
 		float L_2;
 		L_2 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___waterTimer = ((float)il2cpp_codegen_add(L_0, ((float)il2cpp_codegen_multiply(L_1, L_2))));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:95>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:94>
 		float L_3 = __this->___waterTimer;
 		if ((!(((float)L_3) >= ((float)(1.0f)))))
 		{
@@ -1895,18 +2071,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_HandleParticles_m231EB4DBB50
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:96>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:95>
 		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_4 = __this->___waterParticles;
 		NullCheck(L_4);
 		ParticleSystem_Emit_m3E9E6359087607E84E0D4D35844D80D9452AD72D(L_4, 1, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:97>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:96>
 		float L_5 = __this->___waterTimer;
 		__this->___waterTimer = ((float)il2cpp_codegen_subtract(L_5, (1.0f)));
 	}
 
 IL_0044:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:100>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:99>
 		float L_6 = __this->___seedRate;
 		if ((!(((float)L_6) > ((float)(0.0f)))))
 		{
@@ -1914,13 +2090,13 @@ IL_0044:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:101>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:100>
 		float L_7 = __this->___seedTimer;
 		float L_8 = __this->___seedRate;
 		float L_9;
 		L_9 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___seedTimer = ((float)il2cpp_codegen_add(L_7, ((float)il2cpp_codegen_multiply(L_8, L_9))));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:102>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:101>
 		float L_10 = __this->___seedTimer;
 		if ((!(((float)L_10) >= ((float)(1.0f)))))
 		{
@@ -1928,18 +2104,18 @@ IL_0044:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:103>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:102>
 		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_11 = __this->___seedParticles;
 		NullCheck(L_11);
 		ParticleSystem_Emit_m3E9E6359087607E84E0D4D35844D80D9452AD72D(L_11, 1, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:104>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:103>
 		float L_12 = __this->___seedTimer;
 		__this->___seedTimer = ((float)il2cpp_codegen_subtract(L_12, (1.0f)));
 	}
 
 IL_0095:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:107>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:106>
 		return;
 	}
 }
@@ -1965,7 +2141,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_UpdateButtons_m223A6F4E4C413
 	memset((&G_B14_0), 0, sizeof(G_B14_0));
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B14_1 = NULL;
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:111>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:110>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->___unlockSeedsButton;
 		NullCheck(L_0);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
@@ -1979,16 +2155,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_UpdateButtons_m223A6F4E4C413
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:112>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:111>
 		float L_3 = __this->___water;
 		float L_4 = __this->___unlockCost;
 		V_0 = (bool)((((int32_t)((!(((float)L_3) >= ((float)L_4)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:113>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:112>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_5 = __this->___unlockSeedsButton;
 		bool L_6 = V_0;
 		NullCheck(L_5);
 		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_5, L_6, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:114>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:113>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_7 = __this->___unlockSeedsButton;
 		NullCheck(L_7);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_8;
@@ -2025,7 +2201,7 @@ IL_004a:
 
 IL_004f:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:117>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:116>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_12 = __this->___buyGenButton;
 		NullCheck(L_12);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13;
@@ -2039,16 +2215,16 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:118>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:117>
 		float L_15 = __this->___water;
 		float L_16 = __this->___genCost;
 		V_1 = (bool)((((int32_t)((!(((float)L_15) >= ((float)L_16)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:119>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:118>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_17 = __this->___buyGenButton;
 		bool L_18 = V_1;
 		NullCheck(L_17);
 		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_17, L_18, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:120>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:119>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_19 = __this->___buyGenButton;
 		NullCheck(L_19);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_20;
@@ -2085,7 +2261,7 @@ IL_0099:
 
 IL_009e:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:123>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:122>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_24 = __this->___buyPowerUpButton;
 		NullCheck(L_24);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25;
@@ -2099,16 +2275,16 @@ IL_009e:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:124>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:123>
 		float L_27 = __this->___seeds;
 		float L_28 = __this->___powerUpCost;
 		V_2 = (bool)((((int32_t)((!(((float)L_27) >= ((float)L_28)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:125>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:124>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_29 = __this->___buyPowerUpButton;
 		bool L_30 = V_2;
 		NullCheck(L_29);
 		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_29, L_30, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:126>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:125>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_31 = __this->___buyPowerUpButton;
 		NullCheck(L_31);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_32;
@@ -2145,7 +2321,7 @@ IL_00e8:
 
 IL_00ed:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:128>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:127>
 		return;
 	}
 }
@@ -2155,28 +2331,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_UnlockSeeds_m3151C120BEEBF9B
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_2 = NULL;
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:132>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:131>
 		float L_0 = __this->___water;
 		float L_1 = __this->___unlockCost;
 		if ((!(((float)L_0) >= ((float)L_1))))
 		{
-			goto IL_007d;
+			goto IL_00e7;
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:133>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:132>
 		float L_2 = __this->___water;
 		float L_3 = __this->___unlockCost;
 		__this->___water = ((float)il2cpp_codegen_subtract(L_2, L_3));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:134>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:133>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___seedsUI;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:135>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:134>
 		__this->___seeds = (5.0f);
 		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:136>
 		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_5 = __this->___seedParticles;
@@ -2185,49 +2367,89 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_UnlockSeeds_m3151C120BEEBF9B
 		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_6)
 		{
-			goto IL_0053;
+			goto IL_0056;
 		}
 	}
 	{
 		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:137>
 		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_7 = __this->___seedParticles;
 		NullCheck(L_7);
-		ParticleSystem_Emit_m3E9E6359087607E84E0D4D35844D80D9452AD72D(L_7, ((int32_t)10), NULL);
+		ParticleSystem_Emit_m3E9E6359087607E84E0D4D35844D80D9452AD72D(L_7, ((int32_t)20), NULL);
 	}
 
-IL_0053:
+IL_0056:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:139>
-		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_8 = __this->___unlockSound;
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:140>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:141>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:142>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:143>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:144>
+		float L_8 = __this->___spawnRadius;
+		float L_9 = __this->___spawnRadius;
+		float L_10;
+		L_10 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494(((-L_8)), L_9, NULL);
+		float L_11 = __this->___spawnRadius;
+		float L_12 = __this->___spawnRadius;
+		float L_13;
+		L_13 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494(((-L_11)), L_12, NULL);
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_0), L_10, (0.0f), L_13, NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:145>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14 = __this->___spawnPoint;
+		NullCheck(L_14);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
+		L_15 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_14, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_15, L_16, NULL);
+		V_1 = L_17;
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:146>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = __this->___seedPacketPrefab;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = V_1;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_20;
+		L_20 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_9;
-		L_9 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_9)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21;
+		L_21 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_18, L_19, L_20, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		V_2 = L_21;
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:147>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = V_2;
+		NullCheck(L_22);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
+		L_23 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_22, NULL);
+		RuntimeObject* L_24;
+		L_24 = FarmManager_GrowEase_mE3444CB19D2F181D581585456B40FEF7A9E324BC(__this, L_23, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_25;
+		L_25 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_24, NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:149>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_26 = __this->___unlockSound;
+		bool L_27;
+		L_27 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_26, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_27)
 		{
-			goto IL_006c;
+			goto IL_00d6;
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:139>
-		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_10 = __this->___unlockSound;
-		NullCheck(L_10);
-		AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3(L_10, NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:149>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_28 = __this->___unlockSound;
+		NullCheck(L_28);
+		AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3(L_28, NULL);
 	}
 
-IL_006c:
+IL_00d6:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:140>
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_11 = __this->___unlockSeedsButton;
-		NullCheck(L_11);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12;
-		L_12 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_11, NULL);
-		NullCheck(L_12);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)0, NULL);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:150>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_29 = __this->___unlockSeedsButton;
+		NullCheck(L_29);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_30;
+		L_30 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_29, NULL);
+		NullCheck(L_30);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_30, (bool)0, NULL);
 	}
 
-IL_007d:
+IL_00e7:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:142>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:152>
 		return;
 	}
 }
@@ -2242,7 +2464,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_BuyPowerUp_mF2AEBD6146C0F804
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:146>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:156>
 		float L_0 = __this->___seeds;
 		float L_1 = __this->___powerUpCost;
 		if ((!(((float)L_0) >= ((float)L_1))))
@@ -2251,21 +2473,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager_BuyPowerUp_mF2AEBD6146C0F804
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:148>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:158>
 		float L_2 = __this->___seeds;
 		float L_3 = __this->___powerUpCost;
 		__this->___seeds = ((float)il2cpp_codegen_subtract(L_2, L_3));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:149>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:159>
 		float L_4 = __this->___multiplier;
 		__this->___multiplier = ((float)il2cpp_codegen_multiply(L_4, (2.0f)));
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:153>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:161>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral1A8EBD7CFFFF17E51D7F8D4E305EC07518F642FF, NULL);
 	}
 
 IL_003d:
 	{
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:155>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:163>
 		return;
 	}
 }
@@ -2411,12 +2633,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FarmManager__ctor_m399163A1651F69832FA96
 		__this->___powerUpCost = (50.0f);
 		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:26>
 		__this->___multiplier = (1.0f);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:31>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:30>
 		__this->___unlockCost = (20.0f);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:36>
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:35>
 		__this->___genCost = (10.0f);
-		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:39>
-		__this->___spawnRadius = (0.5f);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/FarmManager.cs:38>
+		__this->___spawnRadius = (1.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -2591,6 +2813,89 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CGrowEaseU3Ed__36_System_Col
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 79634
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticTrigger_TriggerHaptic_m521E06DEA17913F04E5838755559B7AE568C6371 (HapticTrigger_tDEFF29C05D62F279D1A469F722FC37FA2DE03EE4* __this, BaseInteractionEventArgs_t8B38B6C63C6C9EA4BD179EF5FD40106872B82D7E* ___0_eventArgs, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInParent_TisXRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C_m8E92B551DCA686A050AFE3442EABB96847D598C7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4* V_0 = NULL;
+	XRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C* V_1 = NULL;
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/HapticTrigger.cs:12>
+		BaseInteractionEventArgs_t8B38B6C63C6C9EA4BD179EF5FD40106872B82D7E* L_0 = ___0_eventArgs;
+		NullCheck(L_0);
+		RuntimeObject* L_1;
+		L_1 = BaseInteractionEventArgs_get_interactorObject_m1E083EA51BDA42FDAD94DE824E82C83AA719F4EF_inline(L_0, NULL);
+		V_0 = ((XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4*)IsInstClass((RuntimeObject*)L_1, XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4_il2cpp_TypeInfo_var));
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/HapticTrigger.cs:14>
+		XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4* L_2 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/HapticTrigger.cs:16>
+		XRBaseInteractor_t4AF6FC9A7611B9417B4A43E11704AFF85B4A0FB4* L_4 = V_0;
+		NullCheck(L_4);
+		XRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C* L_5;
+		L_5 = Component_GetComponentInParent_TisXRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C_m8E92B551DCA686A050AFE3442EABB96847D598C7(L_4, Component_GetComponentInParent_TisXRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C_m8E92B551DCA686A050AFE3442EABB96847D598C7_RuntimeMethod_var);
+		V_1 = L_5;
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/HapticTrigger.cs:18>
+		XRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C* L_6 = V_1;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_7;
+		L_7 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_6, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_7)
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/HapticTrigger.cs:20>
+		XRBaseController_t44C1BB30A7E1D279DD2508F34D3352B33A9AD60C* L_8 = V_1;
+		float L_9 = __this->___intensity;
+		float L_10 = __this->___duration;
+		NullCheck(L_8);
+		bool L_11;
+		L_11 = VirtualFuncInvoker2< bool, float, float >::Invoke(18, L_8, L_9, L_10);
+	}
+
+IL_0038:
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/HapticTrigger.cs:23>
+		return;
+	}
+}
+// Method Definition Index: 79635
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticTrigger__ctor_mBA50752F1EFD05544AC73AFF6D98C8F0550ED7E2 (HapticTrigger_tDEFF29C05D62F279D1A469F722FC37FA2DE03EE4* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/HapticTrigger.cs:7>
+		__this->___intensity = (0.5f);
+		//<source_info:C:/Users/priti/MP3-Juicy-Sim/Assets/Scripts/HapticTrigger.cs:8>
+		__this->___duration = (0.200000003f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 79636
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2606,7 +2911,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A90
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79635
+// Method Definition Index: 79637
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2622,41 +2927,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79636
+// Method Definition Index: 79638
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____59469F7B5C3DDC90DE916194382E7F2D1CA7F4563AB6E0D6DD1CBCF935A8372F_FieldInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____BD2BDF84DEC502A1B3A5D2C40CF4849E846300E0F73DC56DB49342D158C3C91F_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____5C5C153E7D2D3980B4A7207ED96948EEC12A46A0DC231456DACF9AF0F2063AE0_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____D8B0E4D19DA50C5F9FED40DC972DBD2F0B738D83091C757DE0E7981CDC3B1C7E_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E));
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)84));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)124));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____BD2BDF84DEC502A1B3A5D2C40CF4849E846300E0F73DC56DB49342D158C3C91F_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____5C5C153E7D2D3980B4A7207ED96948EEC12A46A0DC231456DACF9AF0F2063AE0_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)48));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)67));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____59469F7B5C3DDC90DE916194382E7F2D1CA7F4563AB6E0D6DD1CBCF935A8372F_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____D8B0E4D19DA50C5F9FED40DC972DBD2F0B738D83091C757DE0E7981CDC3B1C7E_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
 		(&V_0)->___TypesData = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
-		(&V_0)->___TotalFiles = 2;
-		(&V_0)->___TotalTypes = 3;
+		(&V_0)->___TotalFiles = 3;
+		(&V_0)->___TotalTypes = 4;
 		(&V_0)->___IsEditorOnly = (bool)0;
 		MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E L_6 = V_0;
 		return L_6;
 	}
 }
-// Method Definition Index: 79637
+// Method Definition Index: 79639
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2884,6 +3189,15 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_7, L_8));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
 		return L_9;
+	}
+}
+// Method Definition Index: 22014
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* BaseInteractionEventArgs_get_interactorObject_m1E083EA51BDA42FDAD94DE824E82C83AA719F4EF_inline (BaseInteractionEventArgs_t8B38B6C63C6C9EA4BD179EF5FD40106872B82D7E* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:./Library/PackageCache/com.unity.xr.interaction.toolkit@5f736ad4ccd8/Runtime/Interaction/XRInteractionEvents.cs:35>
+		RuntimeObject* L_0 = __this->___U3CinteractorObjectU3Ek__BackingField;
+		return L_0;
 	}
 }
 // Method Definition Index: 41899

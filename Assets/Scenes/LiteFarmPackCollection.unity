@@ -786,18 +786,18 @@ MonoBehaviour:
   m_PlayAudioClipOnHoverCanceled: 0
   m_AudioClipForOnHoverCanceled: {fileID: 0}
   m_AllowHoverAudioWhileSelecting: 1
-  m_PlayHapticsOnSelectEntered: 0
-  m_HapticSelectEnterIntensity: 0
-  m_HapticSelectEnterDuration: 0
+  m_PlayHapticsOnSelectEntered: 1
+  m_HapticSelectEnterIntensity: 0.2
+  m_HapticSelectEnterDuration: 0.15
   m_PlayHapticsOnSelectExited: 0
   m_HapticSelectExitIntensity: 0
   m_HapticSelectExitDuration: 0
   m_PlayHapticsOnSelectCanceled: 0
   m_HapticSelectCancelIntensity: 0
   m_HapticSelectCancelDuration: 0
-  m_PlayHapticsOnHoverEntered: 0
-  m_HapticHoverEnterIntensity: 0
-  m_HapticHoverEnterDuration: 0
+  m_PlayHapticsOnHoverEntered: 1
+  m_HapticHoverEnterIntensity: 0.2
+  m_HapticHoverEnterDuration: 0.15
   m_PlayHapticsOnHoverExited: 0
   m_HapticHoverExitIntensity: 0
   m_HapticHoverExitDuration: 0
@@ -6586,7 +6586,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -6634,7 +6634,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.125
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -12466,6 +12466,7 @@ GameObject:
   - component: {fileID: 1458283866}
   - component: {fileID: 1458283865}
   - component: {fileID: 1458283864}
+  - component: {fileID: 1458283869}
   m_Layer: 5
   m_Name: Buy_PowerUpBtn
   m_TagString: Untagged
@@ -12564,7 +12565,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1047171480}
         m_TargetAssemblyTypeName: FarmManager, Assembly-CSharp
-        m_MethodName: BuySeedGenerator
+        m_MethodName: BuyPowerUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12591,7 +12592,19 @@ MonoBehaviour:
       m_Calls: []
   m_Activated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1458283869}
+        m_TargetAssemblyTypeName: HapticTrigger, Assembly-CSharp
+        m_MethodName: TriggerHaptic
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
@@ -12646,7 +12659,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1047171480}
         m_TargetAssemblyTypeName: FarmManager, Assembly-CSharp
-        m_MethodName: BuySeedGenerator
+        m_MethodName: BuyPowerUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12694,6 +12707,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458283862}
   m_CullTransparentMesh: 1
+--- !u!114 &1458283869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458283862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95417752c9a3729438ae98dc8b2a7fc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HapticTrigger
+  intensity: 0.7
+  duration: 0.75
 --- !u!1 &1717993929
 GameObject:
   m_ObjectHideFlags: 0

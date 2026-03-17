@@ -24,7 +24,6 @@ public class FarmManager : MonoBehaviour
     public Button buyPowerUpButton;
     public float powerUpCost = 50f;
     public float multiplier = 1.0f;
-    // public ActionBasedController controller;
 
     [Header("Feature 4: Unlock UI")]
     public Button unlockSeedsButton;
@@ -138,17 +137,14 @@ public class FarmManager : MonoBehaviour
                 seedParticles.Emit(20); 
             }
 
-            for (int i = 0; i < 5; i++)
-            {
-                Vector3 randomOffset = new Vector3(
+            Vector3 randomOffset = new Vector3(
                     Random.Range(-spawnRadius, spawnRadius),
                     0,
                     Random.Range(-spawnRadius, spawnRadius)
                 );
-                Vector3 spawnPos = spawnPoint.position + randomOffset;
-                GameObject newPack = Instantiate(seedPacketPrefab, spawnPos, Quaternion.identity);
-                StartCoroutine(GrowEase(newPack.transform));
-            }
+            Vector3 spawnPos = spawnPoint.position + randomOffset;
+            GameObject newPack = Instantiate(seedPacketPrefab, spawnPos, Quaternion.identity);
+            StartCoroutine(GrowEase(newPack.transform));
 
             if (unlockSound != null) unlockSound.Play();
             unlockSeedsButton.gameObject.SetActive(false);
@@ -161,20 +157,10 @@ public class FarmManager : MonoBehaviour
         {
             seeds -= powerUpCost;
             multiplier *= 2.0f;
-        
-            // TriggerHaptic(0.5f, 0.2f); 
             
             Debug.Log("Power-up Purchased! Rate Multiplied.");
         }
     }
-
-    // public void TriggerHaptic(float intensity, float duration)
-    // {
-    //     if (controller != null)
-    //     {
-    //         controller.SendHapticImpulse(intensity, duration);
-    //     }
-    // }
 
     public void BuySeedGenerator()
     {

@@ -23,11 +23,13 @@ extern void U3CGrowEaseU3Ed__36_MoveNext_mD5AB3731B2E2C54072EEBF3F5D3516748D7C05
 extern void U3CGrowEaseU3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m111EAEB1D507A9EAD4241AF83F7B3DD82499EEA4 (void);
 extern void U3CGrowEaseU3Ed__36_System_Collections_IEnumerator_Reset_m6235DE3E22FBF6AB1C7CD50B51CE03156C9D7DB4 (void);
 extern void U3CGrowEaseU3Ed__36_System_Collections_IEnumerator_get_Current_mBB66761C479469C338DA206064356171CE8B8E81 (void);
+extern void HapticTrigger_TriggerHaptic_m521E06DEA17913F04E5838755559B7AE568C6371 (void);
+extern void HapticTrigger__ctor_mBA50752F1EFD05544AC73AFF6D98C8F0550ED7E2 (void);
 extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[20] = 
+static Il2CppMethodPointer s_methodPointers[22] = 
 {
 	FarmManager_Start_m03CAB4FECE5E9F506F29826BAC5229F1A82B90A7,
 	FarmManager_CheckProgression_m12E088755B7358F06CD7CCF9F3512E09B9D137FF,
@@ -45,12 +47,14 @@ static Il2CppMethodPointer s_methodPointers[20] =
 	U3CGrowEaseU3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m111EAEB1D507A9EAD4241AF83F7B3DD82499EEA4,
 	U3CGrowEaseU3Ed__36_System_Collections_IEnumerator_Reset_m6235DE3E22FBF6AB1C7CD50B51CE03156C9D7DB4,
 	U3CGrowEaseU3Ed__36_System_Collections_IEnumerator_get_Current_mBB66761C479469C338DA206064356171CE8B8E81,
+	HapticTrigger_TriggerHaptic_m521E06DEA17913F04E5838755559B7AE568C6371,
+	HapticTrigger__ctor_mBA50752F1EFD05544AC73AFF6D98C8F0550ED7E2,
 	Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6,
 	Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[20] = 
+static const int32_t s_InvokerIndices[22] = 
 {
 	15002,
 	15002,
@@ -68,6 +72,8 @@ static const int32_t s_InvokerIndices[20] =
 	14790,
 	15002,
 	14790,
+	11380,
+	15002,
 	15002,
 	15002,
 	26052,
@@ -77,7 +83,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	20,
+	22,
 	s_methodPointers,
 	0,
 	NULL,
