@@ -40,6 +40,12 @@ public class FarmManager : MonoBehaviour
     public GameObject genUI;
     private int totalGenerators = 0;
 
+    [Header("UI")]
+    public Popup popup;
+
+    [Header("Eye")]
+    public GrowWide eyeGrow;
+
     bool unlockSeedsButtonShown = false;
     bool generatorUnlocked = false;
     bool packsTextShown = false;
@@ -59,17 +65,23 @@ public class FarmManager : MonoBehaviour
         {
             unlockSeedsButton.gameObject.SetActive(true);
             unlockSeedsButtonShown = true;
+            popup.Show("Seeds unlocked - Spend some water and plant!");
+            eyeGrow.Grow(2.5f);
         }
 
         if (!generatorUnlocked && seedsUI.activeSelf && water >= unlockCost && seeds >= 5)
         {
             buyGenButton.gameObject.SetActive(true);
             generatorUnlocked = true;
+            popup.Show("Generator unlocked");
+            eyeGrow.Grow(2.5f);
         }
         
         if (generatorUnlocked && !buyPowerUpButton.gameObject.activeSelf && seeds >= 10)
         {
             buyPowerUpButton.gameObject.SetActive(true);
+            popup.Show("Fertilizer unlocked");
+            eyeGrow.Grow(2.5f);
         }
     }
 
@@ -124,6 +136,11 @@ public class FarmManager : MonoBehaviour
             buyPowerUpButton.interactable = canAfford;
             buyPowerUpButton.image.color = canAfford ? Color.green : Color.gray;
         }
+    }
+
+    public void AddMoreWater(float amount)
+    {
+        water += amount;
     }
 
     public void UnlockSeeds()
