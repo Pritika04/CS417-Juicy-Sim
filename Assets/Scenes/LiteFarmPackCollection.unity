@@ -12235,7 +12235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821291005925e0945a4220d927a3724b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FarmManager
-  water: 15
+  water: 0
   waterRate: 1
   waterText: {fileID: 1407900515}
   waterParticles: {fileID: 1117374444}
@@ -12253,6 +12253,8 @@ MonoBehaviour:
   multiplier: 1
   powerupParticles: {fileID: 391135969}
   powerupSound: {fileID: 653805946}
+  powerupScalePulse: {fileID: 1458283870}
+  powerupText: {fileID: 691698227}
   unlockSeedsButton: {fileID: 1163918635}
   unlockCost: 20
   unlockSound: {fileID: 215296949}
@@ -22807,6 +22809,7 @@ GameObject:
   - component: {fileID: 1458283865}
   - component: {fileID: 1458283864}
   - component: {fileID: 1458283869}
+  - component: {fileID: 1458283870}
   m_Layer: 5
   m_Name: Buy_PowerUpBtn
   m_TagString: Untagged
@@ -23061,6 +23064,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HapticTrigger
   intensity: 0.7
   duration: 0.75
+--- !u!114 &1458283870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458283862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b253373f0bf37ab4cbf7ebcf31361d26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScalePulse
+  scaleMultiplier: 1.2
+  scaleUpTime: 0.12
+  scaleDownTime: 0.12
+  textSizeMultiplier: 1.1
+  textScaleUpTime: 0.3
+  textScaleDownTime: 0.3
 --- !u!1 &1465198505
 GameObject:
   m_ObjectHideFlags: 0

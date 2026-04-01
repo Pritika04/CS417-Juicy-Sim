@@ -30,6 +30,8 @@ public class FarmManager : MonoBehaviour
     public float multiplier = 1.0f;
     public ParticleSystem powerupParticles;
     public AudioSource powerupSound;
+    public ScalePulse powerupScalePulse;
+    public TMP_Text powerupText;
 
     [Header("Feature 4: Unlock UI")]
     public Button unlockSeedsButton;
@@ -197,6 +199,7 @@ public class FarmManager : MonoBehaviour
 
             powerupParticles.Emit(50);
             powerupSound.Play();
+            powerupScalePulse.PlayTextPulse(powerupText);
             
             Debug.Log("Power-up Purchased! Rate Multiplied.");
         }
