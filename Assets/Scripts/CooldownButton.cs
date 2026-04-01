@@ -16,7 +16,7 @@ public class CooldownButton : MonoBehaviour
 
     [Header("Colors")]
     public Color readyColor = new Color(0f, 0.5f, 1f, 1f);
-    public Color cooldownColor = Color.gray;
+    public Color cooldownColor = Color.red;
 
     private bool isCoolingDown = false;
 
@@ -39,7 +39,7 @@ public class CooldownButton : MonoBehaviour
 
         gameManager.AddMoreWater(waterAmount);
         waterParticles.Emit(10);
-        eyeGrow.Grow(2f);
+        // eyeGrow.Grow(2f);
         StartCoroutine(CooldownRoutine());
     }
 
@@ -51,14 +51,17 @@ public class CooldownButton : MonoBehaviour
             interactable.enabled = false;
 
         if (buttonImage != null)
+        {
             buttonImage.color = cooldownColor;
+            Debug.Log("Set cooldown color to: " + buttonImage.color);
+        }
 
         float elapsed = 0f;
 
         while (elapsed < cooldownTime)
         {
             elapsed += Time.deltaTime;
-            float t = elapsed / cooldownTime;
+            float t = Mathf.Clamp01(elapsed / cooldownTime);
 
             if (buttonImage != null)
                 buttonImage.color = Color.Lerp(cooldownColor, readyColor, t);
@@ -73,6 +76,8 @@ public class CooldownButton : MonoBehaviour
             interactable.enabled = true;
 
         isCoolingDown = false;
-        if (audioWaterFilled != null) audioWaterFilled.Play();
+
+        if (audioWaterFilled != null)
+            audioWaterFilled.Play();
     }
 }
