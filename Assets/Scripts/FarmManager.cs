@@ -36,6 +36,8 @@ public class FarmManager : MonoBehaviour
     public float unlockCost = 20f;
     public AudioSource unlockSound;
     public ParticleSystem unlockParticles;
+    public ScalePulse unlockScalePulse;
+    public TMP_Text unlockText;
 
     [Header("Feature 2: Generators")]
     public Button buyGenButton;
@@ -72,6 +74,7 @@ public class FarmManager : MonoBehaviour
         {
             unlockSeedsButton.gameObject.SetActive(true);
             unlockSeedsButtonShown = true;
+            unlockScalePulse.PlayTextPulse(unlockText);
             unlockParticles.Emit(30);
             unlockSound.Play();
             popup.Show("Seeds unlocked - Spend some water and plant!");
