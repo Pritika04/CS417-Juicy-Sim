@@ -2,9 +2,12 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
 
 public class FarmManager : MonoBehaviour
 {
+    public HapticImpulsePlayer hapticPlayer; //haptic. Drag right controller here
+
     [Header("Resource 1: Water")]
     public float water = 0;
     public float waterRate = 1.0f;
@@ -51,11 +54,11 @@ public class FarmManager : MonoBehaviour
     public GameObject genUI;
     private int totalGenerators = 0;
 
-    // [Header("UI")]
-    // public Popup popup;
+    [Header("UI")]
+    public Popup popup;
 
-    // [Header("Eye")]
-    // public GrowWide eyeGrow;
+    [Header("Eye")]
+    public GrowWide eyeGrow;
 
     bool unlockSeedsButtonShown = false;
     bool generatorUnlocked = false;
@@ -70,6 +73,14 @@ public class FarmManager : MonoBehaviour
         buyPowerUpButton.gameObject.SetActive(false);
     }
 
+    void SendHaptic(float amplitude, float duration) {
+        if (hapticPlayer != null) {
+            hapticPlayer.SendHapticImpulse(amplitude, duration);
+        } else {
+            Debug.LogWarning("no haptic player");
+        }
+    }
+
     void CheckProgression()
     {
         if (!unlockSeedsButtonShown && water >= unlockCost)
@@ -79,8 +90,9 @@ public class FarmManager : MonoBehaviour
             unlockScalePulse.PlayTextPulse(unlockText);
             unlockParticles.Emit(30);
             unlockSound.Play();
-            // popup.Show("Seeds unlocked - Spend some water and plant!");
-            // eyeGrow.Grow(2.5f);
+            popup.Show("Seeds unlocked - Spend some water and plant!");
+            SendHaptic(1f, 5);
+            eyeGrow.Grow(2.5f);
         }
 
         if (!generatorUnlocked && seedsUI.activeSelf && water >= unlockCost && seeds >= 5)
@@ -89,8 +101,8 @@ public class FarmManager : MonoBehaviour
             generatorUnlocked = true;
             unlockParticles.Emit(30);
             unlockSound.Play();
-            // popup.Show("Generator unlocked");
-            // eyeGrow.Grow(2.5f);
+            popup.Show("Generator unlocked");
+            eyeGrow.Grow(2.5f);
         }
         
         if (generatorUnlocked && !buyPowerUpButton.gameObject.activeSelf && seeds >= 10)
@@ -98,8 +110,8 @@ public class FarmManager : MonoBehaviour
             buyPowerUpButton.gameObject.SetActive(true);
             unlockParticles.Emit(30);
             unlockSound.Play();
-            // popup.Show("Fertilizer unlocked");
-            // eyeGrow.Grow(2.5f);
+            popup.Show("Fertilizer unlocked");
+            eyeGrow.Grow(2.5f);
         }
     }
 
@@ -200,7 +212,7 @@ public class FarmManager : MonoBehaviour
             powerupParticles.Emit(50);
             powerupSound.Play();
             powerupScalePulse.PlayTextPulse(powerupText);
-            
+            SendHaptic(0.3f, 3);
             Debug.Log("Power-up Purchased! Rate Multiplied.");
         }
     }
