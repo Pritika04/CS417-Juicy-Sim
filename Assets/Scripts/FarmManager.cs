@@ -45,11 +45,11 @@ public class FarmManager : MonoBehaviour
     public GameObject genUI;
     private int totalGenerators = 0;
 
-    [Header("UI")]
-    public Popup popup;
+    // [Header("UI")]
+    // public Popup popup;
 
-    [Header("Eye")]
-    public GrowWide eyeGrow;
+    // [Header("Eye")]
+    // public GrowWide eyeGrow;
 
     bool unlockSeedsButtonShown = false;
     bool generatorUnlocked = false;
@@ -72,8 +72,8 @@ public class FarmManager : MonoBehaviour
             unlockSeedsButtonShown = true;
             unlockParticles.Emit(30);
             unlockSound.Play();
-            popup.Show("Seeds unlocked - Spend some water and plant!");
-            eyeGrow.Grow(2.5f);
+            // popup.Show("Seeds unlocked - Spend some water and plant!");
+            // eyeGrow.Grow(2.5f);
         }
 
         if (!generatorUnlocked && seedsUI.activeSelf && water >= unlockCost && seeds >= 5)
@@ -82,8 +82,8 @@ public class FarmManager : MonoBehaviour
             generatorUnlocked = true;
             unlockParticles.Emit(30);
             unlockSound.Play();
-            popup.Show("Generator unlocked");
-            eyeGrow.Grow(2.5f);
+            // popup.Show("Generator unlocked");
+            // eyeGrow.Grow(2.5f);
         }
         
         if (generatorUnlocked && !buyPowerUpButton.gameObject.activeSelf && seeds >= 10)
@@ -91,8 +91,8 @@ public class FarmManager : MonoBehaviour
             buyPowerUpButton.gameObject.SetActive(true);
             unlockParticles.Emit(30);
             unlockSound.Play();
-            popup.Show("Fertilizer unlocked");
-            eyeGrow.Grow(2.5f);
+            // popup.Show("Fertilizer unlocked");
+            // eyeGrow.Grow(2.5f);
         }
     }
 
