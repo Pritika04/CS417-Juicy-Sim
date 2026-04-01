@@ -13005,7 +13005,6 @@ GameObject:
   - component: {fileID: 1815689121}
   - component: {fileID: 1815689120}
   - component: {fileID: 1815689124}
-  - component: {fileID: 1815689125}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -13030,7 +13029,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5000001
   m_Height: 2
@@ -13122,27 +13121,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::portalTp
   portalCamera: {fileID: 47783769}
   thePlayer: {fileID: 1474787859}
---- !u!65 &1815689125
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815689119}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &2061695413
 GameObject:
   m_ObjectHideFlags: 0
@@ -15388,9 +15366,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 1717993931}
   - {fileID: 101636332}
-  - {fileID: 1389373944}
   - {fileID: 543450653419520790}
   - {fileID: 1047171479}
+  - {fileID: 1389373944}
   - {fileID: 1413611312}
   - {fileID: 178862248}
   - {fileID: 2061695416}
