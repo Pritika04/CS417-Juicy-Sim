@@ -39,7 +39,7 @@ public class CooldownButton : MonoBehaviour
 
         gameManager.AddMoreWater(waterAmount);
         waterParticles.Emit(10);
-        // eyeGrow.Grow(2f);
+        eyeGrow.Grow(2f);
         StartCoroutine(CooldownRoutine());
     }
 

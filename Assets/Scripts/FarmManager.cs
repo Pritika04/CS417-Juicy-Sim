@@ -101,7 +101,7 @@ public class FarmManager : MonoBehaviour
             generatorUnlocked = true;
             unlockParticles.Emit(30);
             unlockSound.Play();
-            popup.Show("Generator unlocked");
+            popup.Show("Seed Generator unlocked!");
             eyeGrow.Grow(2.5f);
         }
         
@@ -110,7 +110,7 @@ public class FarmManager : MonoBehaviour
             buyPowerUpButton.gameObject.SetActive(true);
             unlockParticles.Emit(30);
             unlockSound.Play();
-            popup.Show("Fertilizer unlocked");
+            popup.Show("Fertilizer unlocked - Buy and Power up!");
             eyeGrow.Grow(2.5f);
         }
     }
