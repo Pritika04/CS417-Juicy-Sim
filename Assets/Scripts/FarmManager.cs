@@ -10,6 +10,7 @@ public class FarmManager : MonoBehaviour
     public float waterRate = 1.0f;
     public TextMeshProUGUI waterText;
     public ParticleSystem waterParticles;
+    public AudioSource waterSound;
     private float waterTimer;
 
     [Header("Resource 2: Seeds")]
@@ -18,17 +19,21 @@ public class FarmManager : MonoBehaviour
     public TextMeshProUGUI seedText;
     public GameObject seedsUI;
     public ParticleSystem seedParticles;
+    public AudioSource seedSound;
     private float seedTimer;
 
     [Header("Feature 3: Power-ups (Haptics)")]
     public Button buyPowerUpButton;
     public float powerUpCost = 50f;
     public float multiplier = 1.0f;
+    public ParticleSystem powerupParticles;
+    public AudioSource powerupSound;
 
     [Header("Feature 4: Unlock UI")]
     public Button unlockSeedsButton;
     public float unlockCost = 20f;
     public AudioSource unlockSound;
+    public ParticleSystem unlockParticles;
 
     [Header("Feature 2: Generators")]
     public Button buyGenButton;
@@ -65,6 +70,8 @@ public class FarmManager : MonoBehaviour
         {
             unlockSeedsButton.gameObject.SetActive(true);
             unlockSeedsButtonShown = true;
+            unlockParticles.Emit(30);
+            unlockSound.Play();
             popup.Show("Seeds unlocked - Spend some water and plant!");
             eyeGrow.Grow(2.5f);
         }
@@ -73,6 +80,8 @@ public class FarmManager : MonoBehaviour
         {
             buyGenButton.gameObject.SetActive(true);
             generatorUnlocked = true;
+            unlockParticles.Emit(30);
+            unlockSound.Play();
             popup.Show("Generator unlocked");
             eyeGrow.Grow(2.5f);
         }
@@ -80,6 +89,8 @@ public class FarmManager : MonoBehaviour
         if (generatorUnlocked && !buyPowerUpButton.gameObject.activeSelf && seeds >= 10)
         {
             buyPowerUpButton.gameObject.SetActive(true);
+            unlockParticles.Emit(30);
+            unlockSound.Play();
             popup.Show("Fertilizer unlocked");
             eyeGrow.Grow(2.5f);
         }
@@ -96,15 +107,17 @@ public class FarmManager : MonoBehaviour
         }
 
         CheckProgression();
-        HandleParticles();
+        HandleParticlesAndSounds();
         UpdateButtons();
     }
 
-    void HandleParticles()
+    void HandleParticlesAndSounds()
     {
         waterTimer += waterRate * Time.deltaTime;
         if (waterTimer >= 1.0f) {
             waterParticles.Emit(1);
+            waterSound.Play();
+            // @TODO: haptics
             waterTimer -= 1.0f;
         }
 
@@ -112,6 +125,8 @@ public class FarmManager : MonoBehaviour
             seedTimer += seedRate * Time.deltaTime;
             if (seedTimer >= 1.0f) {
                 seedParticles.Emit(1);
+                seedSound.Play();
+                // @TODO: haptics
                 seedTimer -= 1.0f;
             }
         }
@@ -174,6 +189,9 @@ public class FarmManager : MonoBehaviour
         {
             seeds -= powerUpCost;
             multiplier *= 2.0f;
+
+            powerupParticles.Emit(50);
+            powerupSound.Play();
             
             Debug.Log("Power-up Purchased! Rate Multiplied.");
         }
@@ -205,6 +223,9 @@ public class FarmManager : MonoBehaviour
 
             GameObject newPack = Instantiate(seedPacketPrefab, spawnPos, Quaternion.identity);
             StartCoroutine(GrowEase(newPack.transform));
+
+            seedSound.Play();
+            seedParticles.Emit(50);
         }
     }
 

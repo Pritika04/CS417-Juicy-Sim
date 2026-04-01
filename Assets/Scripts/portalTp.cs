@@ -12,7 +12,7 @@ public class portalTp : MonoBehaviour
  
             Debug.Log("Trigger hit by: " + other.name);
             Debug.Log("Teleporting to: " + portalCamera.transform.position);
-            thePlayer.transform.position += portalCamera.transform.position;
+            thePlayer.transform.position = portalCamera.transform.position;
             Debug.Log("Player landed at: " + thePlayer.transform.position);
 
 
