@@ -12456,6 +12456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821291005925e0945a4220d927a3724b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FarmManager
+  hapticPlayer: {fileID: 1413611313}
   water: 0
   waterRate: 1
   waterText: {fileID: 1407900515}
@@ -12489,6 +12490,8 @@ MonoBehaviour:
   spawnRadius: 0.2
   genCountText: {fileID: 899159377}
   genUI: {fileID: 1097957326}
+  popup: {fileID: 0}
+  eyeGrow: {fileID: 0}
 --- !u!1 &1097957326
 GameObject:
   m_ObjectHideFlags: 0
@@ -23027,6 +23030,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 319840067}
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+--- !u!114 &1413611313 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5967689310316253315, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 1413611312}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b734f2bd29eeddd4d85afb0c266228c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1458283862
 GameObject:
   m_ObjectHideFlags: 0
