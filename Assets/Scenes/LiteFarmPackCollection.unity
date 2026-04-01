@@ -916,6 +916,7 @@ GameObject:
   - component: {fileID: 281392545}
   - component: {fileID: 281392547}
   - component: {fileID: 281392546}
+  - component: {fileID: 281392548}
   m_Layer: 5
   m_Name: Water_Img
   m_TagString: Untagged
@@ -981,6 +982,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281392544}
   m_CullTransparentMesh: 1
+--- !u!114 &281392548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281392544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b253373f0bf37ab4cbf7ebcf31361d26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScalePulse
+  scaleMultiplier: 1.2
+  scaleUpTime: 0.12
+  scaleDownTime: 0.12
 --- !u!1 &319840059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1670256624, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
@@ -11906,6 +11922,7 @@ GameObject:
   - component: {fileID: 1042850371}
   - component: {fileID: 1042850370}
   - component: {fileID: 1042850372}
+  - component: {fileID: 1042850373}
   m_Layer: 5
   m_Name: Seeds_Img
   m_TagString: Untagged
@@ -12068,6 +12085,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1042850373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042850368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b253373f0bf37ab4cbf7ebcf31361d26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScalePulse
+  scaleMultiplier: 1.2
+  scaleUpTime: 0.12
+  scaleDownTime: 0.12
 --- !u!1 &1047171474
 GameObject:
   m_ObjectHideFlags: 0
@@ -12202,12 +12234,14 @@ MonoBehaviour:
   waterText: {fileID: 1407900515}
   waterParticles: {fileID: 1117374444}
   waterSound: {fileID: 770648199}
+  waterScalePulse: {fileID: 281392548}
   seeds: 0
   seedRate: 0
   seedText: {fileID: 100862094}
   seedsUI: {fileID: 1042850368}
   seedParticles: {fileID: 943397309}
   seedSound: {fileID: 1465198506}
+  seedScalePulse: {fileID: 1042850373}
   buyPowerUpButton: {fileID: 1458283866}
   powerUpCost: 50
   multiplier: 1

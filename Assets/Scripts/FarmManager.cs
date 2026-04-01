@@ -11,6 +11,7 @@ public class FarmManager : MonoBehaviour
     public TextMeshProUGUI waterText;
     public ParticleSystem waterParticles;
     public AudioSource waterSound;
+    public ScalePulse waterScalePulse;
     private float waterTimer;
 
     [Header("Resource 2: Seeds")]
@@ -20,6 +21,7 @@ public class FarmManager : MonoBehaviour
     public GameObject seedsUI;
     public ParticleSystem seedParticles;
     public AudioSource seedSound;
+    public ScalePulse seedScalePulse;
     private float seedTimer;
 
     [Header("Feature 3: Power-ups (Haptics)")]
@@ -117,7 +119,7 @@ public class FarmManager : MonoBehaviour
         if (waterTimer >= 1.0f) {
             waterParticles.Emit(1);
             waterSound.Play();
-            // @TODO: haptics
+            waterScalePulse.PlayScalePulse();
             waterTimer -= 1.0f;
         }
 
@@ -126,7 +128,7 @@ public class FarmManager : MonoBehaviour
             if (seedTimer >= 1.0f) {
                 seedParticles.Emit(1);
                 seedSound.Play();
-                // @TODO: haptics
+                seedScalePulse.PlayScalePulse();
                 seedTimer -= 1.0f;
             }
         }
