@@ -35493,7 +35493,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1047171480}
         m_TargetAssemblyTypeName: FarmManager, Assembly-CSharp
-        m_MethodName: UnlockSeeds
+        m_MethodName: PerformPrestige
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
