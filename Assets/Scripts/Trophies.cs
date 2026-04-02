@@ -63,9 +63,8 @@ public class Trophies : MonoBehaviour
         if (trophy == null) return;
         
         trophy.SetActive(true);
-        
-        if (trophyParticles != null) trophyParticles.Play();
-        if (trophySound != null) trophySound.Play();
+        trophyParticles.Emit(50);
+        trophySound.Play();
         
         Debug.Log(trophy.name + " appeared with Juice!");
     }

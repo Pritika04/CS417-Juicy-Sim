@@ -928,11 +928,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
---- !u!1 &201132474 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2630425031254273193, guid: ff4399c5c516b6145b031f40e03b2334, type: 3}
-  m_PrefabInstance: {fileID: 6354832638724401659}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &215296948
 GameObject:
   m_ObjectHideFlags: 0
@@ -12429,7 +12424,7 @@ Transform:
   m_GameObject: {fileID: 725753693}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -6.52, y: 0.23, z: -5.03}
+  m_LocalPosition: {x: -6.52, y: 0.23, z: -0.02}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18172,7 +18167,7 @@ MonoBehaviour:
   unlockText: {fileID: 644915672}
   buyGenButton: {fileID: 380119154}
   genCost: 10
-  seedPacketPrefab: {fileID: 201132474}
+  seedPacketPrefab: {fileID: 2630425031254273193, guid: ff4399c5c516b6145b031f40e03b2334, type: 3}
   spawnPoint: {fileID: 248940658}
   spawnRadius: 0.2
   genCountText: {fileID: 899159377}
@@ -18181,9 +18176,10 @@ MonoBehaviour:
   eyeGrow: {fileID: 1897889171}
   prestigeLevel: 0
   prestigeMultiplier: 1
-  prestigeUI: {fileID: 2041113916}
+  prestigeButton: {fileID: 2041113921}
   prestigeParticles: {fileID: 1698436617}
   prestigeSound: {fileID: 501400060}
+  prestigeCountText: {fileID: 886591292}
 --- !u!1 &1097957326
 GameObject:
   m_ObjectHideFlags: 0
@@ -29932,6 +29928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Interaction Simulator
       objectReference: {fileID: 0}
+    - target: {fileID: 8135023674665499069, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -29994,7 +29994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1687390791
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37726,7 +37726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2630425031254273193, guid: ff4399c5c516b6145b031f40e03b2334, type: 3}
       propertyPath: m_TagString
-      value: SeedPacket
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5502710733676655503, guid: ff4399c5c516b6145b031f40e03b2334, type: 3}
       propertyPath: m_RootOrder

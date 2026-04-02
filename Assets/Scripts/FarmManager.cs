@@ -68,10 +68,11 @@ public class FarmManager : MonoBehaviour
     [Header("Feature: Prestige")]
     public int prestigeLevel = 0;
     public float prestigeMultiplier = 1.0f;
-    public GameObject prestigeUI;
+    public Button prestigeButton;
     public ParticleSystem prestigeParticles;
     public AudioSource prestigeSound;
     private string lastSaveTimeKey = "LastSaveTime";
+    public TextMeshProUGUI prestigeCountText;
 
     void Start() {
         LoadGame();
@@ -95,9 +96,9 @@ public class FarmManager : MonoBehaviour
 
     void CheckProgression()
     {
-        if (prestigeUI && !prestigeUI.activeSelf && seeds >= 1000)
+        if (prestigeButton && !prestigeButton.gameObject.activeSelf && seeds >= 1000)
         {
-            prestigeUI.SetActive(true);
+            prestigeButton.gameObject.SetActive(true);
             unlockParticles.Emit(30);
             popup.Show("The path to Prestige has opened...");
             SendHaptic(1f, 5);
@@ -196,6 +197,13 @@ public class FarmManager : MonoBehaviour
             bool canAfford = seeds >= powerUpCost;
             buyPowerUpButton.interactable = canAfford;
             buyPowerUpButton.image.color = canAfford ? Color.green : Color.gray;
+            SendHaptic(0.3f, 3);
+        }
+
+        if (prestigeButton.gameObject.activeSelf) {
+            bool canAfford = seeds >= 1000;
+            prestigeButton.interactable = canAfford;
+            prestigeButton.image.color = canAfford ? Color.green : Color.gray;
             SendHaptic(0.3f, 3);
         }
     }
@@ -333,6 +341,8 @@ public class FarmManager : MonoBehaviour
 
         seedRate = totalGenerators * 0.5f;
         genCountText.text = "Packs: " + totalGenerators;
+        prestigeCountText.text = "Prestige: " + prestigeLevel;
+        seedText.text = "Seeds: " + Mathf.FloorToInt(seeds);
     }
 
     public void CalculateOfflineGains()
@@ -376,11 +386,7 @@ public class FarmManager : MonoBehaviour
         unlockSeedsButtonShown = false;
         generatorUnlocked = false;
 
-         GameObject[] packets = GameObject.FindGameObjectsWithTag("SeedPacket");
-        foreach (GameObject p in packets)
-        {
-          Destroy(p);
-        }
+        prestigeCountText.text = "Prestige: " + prestigeLevel;
 
         waterText.text = "Water: " + Mathf.FloorToInt(water);
         seedText.text = "Seeds: " + Mathf.FloorToInt(seeds);
@@ -390,7 +396,7 @@ public class FarmManager : MonoBehaviour
         genUI.SetActive(false);
         buyGenButton.gameObject.SetActive(false);
         buyPowerUpButton.gameObject.SetActive(false);
-        prestigeUI.SetActive(false);
+        prestigeButton.gameObject.SetActive(false);
         unlockSeedsButton.gameObject.SetActive(true);
 
         Trophies trophyScript = FindFirstObjectByType<Trophies>();
