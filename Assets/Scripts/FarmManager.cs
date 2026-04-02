@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
+using System;
 
 public class FarmManager : MonoBehaviour
 {
@@ -64,13 +65,24 @@ public class FarmManager : MonoBehaviour
     bool generatorUnlocked = false;
     bool packsTextShown = false;
 
-    void Start()
-    {
-        seedsUI.SetActive(false);
-        unlockSeedsButton.gameObject.SetActive(false);
-        buyGenButton.gameObject.SetActive(false);
-        genUI.SetActive(false);
-        buyPowerUpButton.gameObject.SetActive(false);
+    [Header("Feature: Prestige")]
+    public int prestigeLevel = 0;
+    public float prestigeMultiplier = 1.0f;
+    public GameObject prestigeUI;
+    public ParticleSystem prestigeParticles;
+    public AudioSource prestigeSound;
+    private string lastSaveTimeKey = "LastSaveTime";
+
+    void Start() {
+        LoadGame();
+
+        seedsUI.SetActive(unlockSeedsButtonShown);
+        genUI.SetActive(packsTextShown);
+        unlockSeedsButton.gameObject.SetActive(!unlockSeedsButtonShown);
+        buyGenButton.gameObject.SetActive(unlockSeedsButtonShown);
+        buyPowerUpButton.gameObject.SetActive(generatorUnlocked);
+
+        CalculateOfflineGains();
     }
 
     void SendHaptic(float amplitude, float duration) {
@@ -83,6 +95,16 @@ public class FarmManager : MonoBehaviour
 
     void CheckProgression()
     {
+        if (prestigeUI && !prestigeUI.activeSelf && seeds >= 1000)
+        {
+            prestigeUI.SetActive(true);
+            unlockParticles.Emit(30);
+            popup.Show("The path to Prestige has opened...");
+            SendHaptic(1f, 5);
+            eyeGrow.Grow(2.5f);
+            SaveGame();
+        }
+
         if (!unlockSeedsButtonShown && water >= unlockCost)
         {
             unlockSeedsButton.gameObject.SetActive(true);
@@ -93,6 +115,7 @@ public class FarmManager : MonoBehaviour
             popup.Show("Seeds unlocked - Spend some water and plant!");
             SendHaptic(1f, 5);
             eyeGrow.Grow(2.5f);
+            SaveGame();
         }
 
         if (!generatorUnlocked && seedsUI.activeSelf && water >= unlockCost && seeds >= 5)
@@ -103,6 +126,7 @@ public class FarmManager : MonoBehaviour
             unlockSound.Play();
             popup.Show("Seed Generator unlocked!");
             eyeGrow.Grow(2.5f);
+            SaveGame();
         }
         
         if (generatorUnlocked && !buyPowerUpButton.gameObject.activeSelf && seeds >= 10)
@@ -112,13 +136,14 @@ public class FarmManager : MonoBehaviour
             unlockSound.Play();
             popup.Show("Fertilizer unlocked - Buy and Power up!");
             eyeGrow.Grow(2.5f);
+            SaveGame();
         }
     }
 
     void Update()
     {
         water += waterRate * Time.deltaTime;
-        seeds += (seedRate * multiplier) * Time.deltaTime;
+        seeds += (seedRate * multiplier * prestigeMultiplier) * Time.deltaTime;
 
         waterText.text = "Water: " + Mathf.FloorToInt(water);
         if (seedsUI.activeSelf) {
@@ -157,18 +182,21 @@ public class FarmManager : MonoBehaviour
             bool canUnlock = water >= unlockCost;
             unlockSeedsButton.interactable = canUnlock;
             unlockSeedsButton.image.color = canUnlock ? Color.green : Color.gray;
+            SendHaptic(0.3f, 3);
         }
 
         if (buyGenButton.gameObject.activeSelf) {
             bool canBuy = water >= genCost;
             buyGenButton.interactable = canBuy;
             buyGenButton.image.color = canBuy ? Color.green : Color.gray;
+            SendHaptic(0.3f, 3);
         }
 
         if (buyPowerUpButton.gameObject.activeSelf) {
             bool canAfford = seeds >= powerUpCost;
             buyPowerUpButton.interactable = canAfford;
             buyPowerUpButton.image.color = canAfford ? Color.green : Color.gray;
+            SendHaptic(0.3f, 3);
         }
     }
 
@@ -189,9 +217,9 @@ public class FarmManager : MonoBehaviour
             }
 
             Vector3 randomOffset = new Vector3(
-                    Random.Range(-spawnRadius, spawnRadius),
+                    UnityEngine.Random.Range(-spawnRadius, spawnRadius),
                     0,
-                    Random.Range(-spawnRadius, spawnRadius)
+                    UnityEngine.Random.Range(-spawnRadius, spawnRadius)
                 );
             Vector3 spawnPos = spawnPoint.position + randomOffset;
             GameObject newPack = Instantiate(seedPacketPrefab, spawnPos, Quaternion.identity);
@@ -200,6 +228,8 @@ public class FarmManager : MonoBehaviour
             if (unlockSound != null) unlockSound.Play();
             unlockSeedsButton.gameObject.SetActive(false);
         }
+
+        SaveGame();
     }
 
     public void BuyPowerUp()
@@ -215,6 +245,7 @@ public class FarmManager : MonoBehaviour
             SendHaptic(0.3f, 3);
             Debug.Log("Power-up Purchased! Rate Multiplied.");
         }
+        SaveGame();
     }
 
     public void BuySeedGenerator()
@@ -234,19 +265,20 @@ public class FarmManager : MonoBehaviour
             seedRate += 0.5f;
 
             Vector3 randomOffset = new Vector3(
-                Random.Range(-spawnRadius, spawnRadius),
+                UnityEngine.Random.Range(-spawnRadius, spawnRadius),
                 0,
-                Random.Range(-spawnRadius, spawnRadius)
+                UnityEngine.Random.Range(-spawnRadius, spawnRadius)
             );
 
             Vector3 spawnPos = spawnPoint.position + randomOffset;
 
             GameObject newPack = Instantiate(seedPacketPrefab, spawnPos, Quaternion.identity);
             StartCoroutine(GrowEase(newPack.transform));
-
+            SendHaptic(0.3f, 3);
             seedSound.Play();
             seedParticles.Emit(50);
         }
+        SaveGame();
     }
 
     IEnumerator GrowEase(Transform target)
@@ -267,5 +299,117 @@ public class FarmManager : MonoBehaviour
             yield return null;
         }
         target.localScale = endScale;
+    }
+
+    public void SaveGame()
+    {
+        PlayerPrefs.SetFloat("Water", water);
+        PlayerPrefs.SetFloat("Seeds", seeds);
+        PlayerPrefs.SetInt("TotalGenerators", totalGenerators);
+        PlayerPrefs.SetFloat("Multiplier", multiplier);
+        PlayerPrefs.SetInt("PrestigeLevel", prestigeLevel);
+        PlayerPrefs.SetFloat("PrestigeMultiplier", prestigeMultiplier);
+
+        PlayerPrefs.SetInt("UnlockSeedsShown", unlockSeedsButtonShown ? 1 : 0);
+        PlayerPrefs.SetInt("GeneratorUnlocked", generatorUnlocked ? 1 : 0);
+        PlayerPrefs.SetInt("PacksTextShown", packsTextShown ? 1 : 0);
+
+        PlayerPrefs.SetString(lastSaveTimeKey, DateTime.Now.ToString());
+        PlayerPrefs.Save();
+    }
+
+    public void LoadGame()
+    {
+        water = PlayerPrefs.GetFloat("Water", 0);
+        seeds = PlayerPrefs.GetFloat("Seeds", 0);
+        totalGenerators = PlayerPrefs.GetInt("TotalGenerators", 0);
+        multiplier = PlayerPrefs.GetFloat("Multiplier", 1.0f);
+        prestigeLevel = PlayerPrefs.GetInt("PrestigeLevel", 0);
+        prestigeMultiplier = PlayerPrefs.GetFloat("PrestigeMultiplier", 1.0f);
+
+        unlockSeedsButtonShown = PlayerPrefs.GetInt("UnlockSeedsShown", 0) == 1;
+        generatorUnlocked = PlayerPrefs.GetInt("GeneratorUnlocked", 0) == 1;
+        packsTextShown = PlayerPrefs.GetInt("PacksTextShown", 0) == 1;
+
+        seedRate = totalGenerators * 0.5f;
+        genCountText.text = "Packs: " + totalGenerators;
+    }
+
+    public void CalculateOfflineGains()
+    {
+        if (PlayerPrefs.HasKey(lastSaveTimeKey))
+        {
+            DateTime lastTime = DateTime.Parse(PlayerPrefs.GetString(lastSaveTimeKey));
+            TimeSpan ts = DateTime.Now - lastTime;
+            float secondsAway = (float)ts.TotalSeconds;
+
+            float waterGained = waterRate * secondsAway;
+            float seedsGained = (seedRate * multiplier * prestigeMultiplier) * secondsAway;
+
+            water += waterGained;
+            seeds += seedsGained;
+
+            if (waterGained > 0 || seedsGained > 0)
+            {
+                popup.Show($"Welcome back! You earned {Mathf.FloorToInt(waterGained)} Water while away.");
+                waterParticles.Emit(30);
+                SendHaptic(0.5f, 0.5f);
+            }
+        }
+    }
+
+    public void PerformPrestige()
+    {
+        prestigeLevel++;
+        prestigeMultiplier += 0.5f; 
+        Debug.Log("Prestige Level: " + prestigeLevel);
+
+        water = 0;
+        seeds = 0;
+        totalGenerators = 0;
+        seedRate = 0;        
+        waterRate = 1.0f; 
+        multiplier = 1.0f;      
+        waterTimer = 0;        
+        seedTimer = 0;          
+        packsTextShown = false; 
+        unlockSeedsButtonShown = false;
+        generatorUnlocked = false;
+
+         GameObject[] packets = GameObject.FindGameObjectsWithTag("SeedPacket");
+        foreach (GameObject p in packets)
+        {
+          Destroy(p);
+        }
+
+        waterText.text = "Water: " + Mathf.FloorToInt(water);
+        seedText.text = "Seeds: " + Mathf.FloorToInt(seeds);
+        genCountText.text = "Packs: " + totalGenerators;
+        
+        seedsUI.SetActive(false);
+        genUI.SetActive(false);
+        buyGenButton.gameObject.SetActive(false);
+        buyPowerUpButton.gameObject.SetActive(false);
+        prestigeUI.SetActive(false);
+        unlockSeedsButton.gameObject.SetActive(true);
+
+        Trophies trophyScript = FindFirstObjectByType<Trophies>();
+        if (trophyScript != null)
+        {
+            trophyScript.ResetTrophies();
+        }
+
+        if (prestigeParticles != null) prestigeParticles.Play();
+        if (prestigeSound != null) prestigeSound.Play();
+        SendHaptic(1.0f, 1.0f);
+        
+        SaveGame();
+    }
+
+    private void OnApplicationQuit() { 
+        SaveGame(); 
+    }
+    private void OnApplicationPause(bool pause) { 
+        if (pause) SaveGame(); 
     }
 }

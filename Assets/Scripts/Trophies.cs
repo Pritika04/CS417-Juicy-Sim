@@ -1,25 +1,29 @@
 using UnityEngine;
 
-public class Trophies: MonoBehaviour
+public class Trophies : MonoBehaviour
 {
-    public FarmManager farmManager; // reference to your countDown script
+    public FarmManager farmManager; 
 
-    
+    [Header("Trophy Objects")]
     public GameObject object1;
     public GameObject object2;
     public GameObject object3;
+
+    [Header("Thresholds")]
+    public float score1 = 20;
+    public float score2 = 120;
+    public float score3 = 520;
+
+    [Header("Juicy Feedback")]
+    public ParticleSystem trophyParticles;
+    public AudioSource trophySound;
 
     private bool object1Shown = false;
     private bool object2Shown = false;
     private bool object3Shown = false;
 
-    public float score1 = 100;
-    public float score2 = 200;
-    public float score3 = 300;
-
     void Start()
     {
-        // hide all objects at start
         if (object1 != null) object1.SetActive(false);
         if (object2 != null) object2.SetActive(false);
         if (object3 != null) object3.SetActive(false);
@@ -29,25 +33,50 @@ public class Trophies: MonoBehaviour
     {
         float currentScore = farmManager.seeds;
 
-        if (!object1Shown && currentScore >= 20 )
+        if (currentScore < 1 && (object1Shown || object2Shown || object3Shown))
         {
-            object1.SetActive(true);
+            ResetTrophies();
+            return; 
+        }
+
+        if (!object1Shown && currentScore >= score1)
+        {
+            ShowTrophy(object1);
             object1Shown = true;
-            Debug.Log("Object 1 appeared!");
         }
 
-        if (!object2Shown && currentScore >= 120)
+        if (!object2Shown && currentScore >= score2)
         {
-            object2.SetActive(true);
+            ShowTrophy(object2);
             object2Shown = true;
-            Debug.Log("Object 2 appeared!");
         }
 
-        if (!object3Shown && currentScore >= 520)
+        if (!object3Shown && currentScore >= score3)
         {
-            object3.SetActive(true);
+            ShowTrophy(object3);
             object3Shown = true;
-            Debug.Log("Object 3 appeared!");
         }
+    }
+
+    void ShowTrophy(GameObject trophy)
+    {
+        if (trophy == null) return;
+        
+        trophy.SetActive(true);
+        
+        if (trophyParticles != null) trophyParticles.Play();
+        if (trophySound != null) trophySound.Play();
+        
+        Debug.Log(trophy.name + " appeared with Juice!");
+    }
+
+    public void ResetTrophies()
+    {
+        if (object1) object1.SetActive(false);
+        if (object2) object2.SetActive(false);
+        if (object3) object3.SetActive(false);
+        object1Shown = false;
+        object2Shown = false;
+        object3Shown = false;
     }
 }
