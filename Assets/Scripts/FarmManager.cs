@@ -101,7 +101,7 @@ public class FarmManager : MonoBehaviour
             prestigeButton.gameObject.SetActive(true);
             unlockParticles.Emit(30);
             popup.Show("The path to Prestige has opened...");
-            SendHaptic(1f, 5);
+            
             eyeGrow.Grow(2.5f);
             SaveGame();
         }
@@ -114,7 +114,6 @@ public class FarmManager : MonoBehaviour
             unlockParticles.Emit(30);
             unlockSound.Play();
             popup.Show("Seeds unlocked - Spend some water and plant!");
-            SendHaptic(1f, 5);
             eyeGrow.Grow(2.5f);
             SaveGame();
         }
@@ -183,28 +182,23 @@ public class FarmManager : MonoBehaviour
             bool canUnlock = water >= unlockCost;
             unlockSeedsButton.interactable = canUnlock;
             unlockSeedsButton.image.color = canUnlock ? Color.green : Color.gray;
-            SendHaptic(0.3f, 3);
         }
 
         if (buyGenButton.gameObject.activeSelf) {
             bool canBuy = water >= genCost;
             buyGenButton.interactable = canBuy;
             buyGenButton.image.color = canBuy ? Color.green : Color.gray;
-            SendHaptic(0.3f, 3);
         }
 
         if (buyPowerUpButton.gameObject.activeSelf) {
             bool canAfford = seeds >= powerUpCost;
             buyPowerUpButton.interactable = canAfford;
-            buyPowerUpButton.image.color = canAfford ? Color.green : Color.gray;
-            SendHaptic(0.3f, 3);
         }
 
         if (prestigeButton.gameObject.activeSelf) {
             bool canAfford = seeds >= 1000;
             prestigeButton.interactable = canAfford;
             prestigeButton.image.color = canAfford ? Color.green : Color.gray;
-            SendHaptic(0.3f, 3);
         }
     }
 
@@ -250,7 +244,7 @@ public class FarmManager : MonoBehaviour
             powerupParticles.Emit(50);
             powerupSound.Play();
             powerupScalePulse.PlayTextPulse(powerupText);
-            SendHaptic(0.3f, 3);
+            SendHaptic(1f, 3);
             Debug.Log("Power-up Purchased! Rate Multiplied.");
         }
         SaveGame();
@@ -282,7 +276,7 @@ public class FarmManager : MonoBehaviour
 
             GameObject newPack = Instantiate(seedPacketPrefab, spawnPos, Quaternion.identity);
             StartCoroutine(GrowEase(newPack.transform));
-            SendHaptic(0.3f, 3);
+            SendHaptic(1f, 3);
             seedSound.Play();
             seedParticles.Emit(50);
         }
@@ -363,7 +357,6 @@ public class FarmManager : MonoBehaviour
             {
                 popup.Show($"Welcome back! You earned {Mathf.FloorToInt(waterGained)} Water while away.");
                 waterParticles.Emit(30);
-                SendHaptic(0.5f, 0.5f);
             }
         }
     }
